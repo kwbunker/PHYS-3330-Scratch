@@ -220,8 +220,9 @@ functions are:
 
 \[\left| T(f) \right| = \frac{1}{\sqrt{1 + (2\pi fRC)^{2}}} 
 ~~~\mbox{(low-pass)}
-~~~~~~~~~~
-\left| T(f) \right| = \frac{2\pi fRC}{\sqrt{1 + (2\pi fRC)^{2}}}
+\]
+
+\[\left| T(f) \right| = \frac{2\pi fRC}{\sqrt{1 + (2\pi fRC)^{2}}}
 ~~~\mbox{(high-pass)}\]
 
 For both filters: \(f_{C} = 1/{2\pi RC}\ \), where \(f_{C}\) is the
@@ -239,9 +240,9 @@ Steck 2.6 (note that the Steck example is for a \emph{serial} LCR
 circuit so the concepts are the same but the details are different). As
 this is another generalized voltage divider,
 
-\[V_{out} = V_{in} = IZ_{2} = V_{in}\frac{Z_{2}}{Z_{1} + Z_{2}} 
-~~~\mbox{with} ~~~Z_{1} = R 
-~~~\mbox{and} ~~~Z_{2} = \frac{j\omega L}{1 - \omega^{2}LC}\]
+\[V_{out} = V_{in} = IZ_{2} = V_{in}\frac{Z_{2}}{Z_{1} + Z_{2}} \]
+\[Z_{1} = R\]
+\[Z_{2} = \frac{j\omega L}{1 - \omega^{2}LC}\]
 
 The magnitude of the transfer function can then be calculated as:
 
@@ -250,10 +251,10 @@ The magnitude of the transfer function can then be calculated as:
 where \(*\) indicates the complex conjugate. The algebra is left for you
 as a prelab exercise.
 
-The resonant frequency and $Q$ factor (quality factor) are given by:
+The resonant frequency, $f_0$ and $Q$ factor (quality factor) are given by:
 
-\[f_{0} = \frac{1}{2\pi\sqrt{LC}}
-~~~~~~~~~~~~~~~~~~~Q = \omega_{0}RC = \frac{R\sqrt{C}}{\sqrt{L}} = \frac{f_{0}}{\Delta f}\]
+\[f_{0} = \frac{1}{2\pi\sqrt{LC}}\]
+\[Q = \omega_{0}RC = \frac{R\sqrt{C}}{\sqrt{L}} = \frac{f_{0}}{\Delta f}\]
 
 The resonant frequency, \(f_{0}\), is the center frequency of the pass
 band, and \(Q\) is equal to the ratio of the center frequency to the
@@ -464,16 +465,57 @@ your data during the lab session.}
 
 \section{Building the Circuits and Predicting Their Behavior}
 
-\begin{figure}[h]%
-    \centering
-    \subfloat[\centering Resistive divider]{{\includegraphics[width=7cm]{lab3fig/r-divider.png} }\label{r-divider}}%
-    \subfloat[\centering Low-pass filter]{{\includegraphics[width=7cm]{lab3fig/low-pass-2.png} } \label{low-pass-2}}\\%
-    \subfloat[\centering High-pass filter]{{\includegraphics[width=7cm]{lab3fig/high-pass-2.png} }\label{high-pass-2}}%
-    \subfloat[\centering Band-pass filter]{{\includegraphics[width=7cm]{lab3fig/band-pass-2.png} }\label{band-pass-2}}%
-    \medskip
-    \caption{Filters}%
-    \label{dividers}%
-\end{figure}
+% \begin{figure}[h]%
+%     \centering
+%     \subfloat[\centering Resistive divider]{{\includegraphics[width=7cm]{lab3fig/r-divider.png} }\label{r-divider}}%
+%     \subfloat[\centering Low-pass filter]{{\includegraphics[width=7cm]{lab3fig/low-pass-2.png} } \label{low-pass-2}}\\%
+%     \subfloat[\centering High-pass filter]{{\includegraphics[width=7cm]{lab3fig/high-pass-2.png} }\label{high-pass-2}}%
+%     \subfloat[\centering Band-pass filter]{{\includegraphics[width=7cm]{lab3fig/band-pass-2.png} }\label{band-pass-2}}%
+%     \medskip
+%     \caption{Filters}%
+%     \label{dividers}%
+% \end{figure}
+
+
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}[t]{0.3\textwidth}
+\centering
+\includegraphics[width=\textwidth]{lab3fig/r-divider.png}
+
+ \caption{resistive divider}
+ \label{r-divider}
+ \end{subfigure}
+ \hspace{1.1cm}%
+ \begin{subfigure}[t]{0.3\textwidth}
+\centering
+\includegraphics[width=\textwidth]{lab3fig/low-pass-2.png}
+
+ \caption{low-pass filter}
+ \label{low-pass-2}
+ \end{subfigure}\\
+ %\hspace{1.1cm}%
+ \medskip
+ \begin{subfigure}[t]{0.3\textwidth}
+ \centering
+\includegraphics[width=\textwidth]{lab3fig/high-pass-2.png}
+
+ \caption{high-pass filter}
+ \label{high-pass-2}
+ \end{subfigure}
+\hspace{1.1cm}%
+ \begin{subfigure}[t]{0.3\textwidth}
+\centering
+\includegraphics[width=\textwidth]{lab3fig/band-pass-2.png}
+
+ \caption{band-pass filter}
+ \label{band-pass-2}
+ \end{subfigure}
+  \medskip
+ \caption{General Voltage Dividers}
+ \label{dividers}
+ \end{figure}
 
 % \begin{figure}[ht]
 % \centering
