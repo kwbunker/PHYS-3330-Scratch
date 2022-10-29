@@ -24,7 +24,7 @@ Applications:
 
 # Diodes
 
-![ [Diode characteristics](https://commons.wikimedia.org/wiki/File:Diode_current_wiki.png)](lab6fig/diode-characteristics.png){#fig:diode-char width="10cm"}
+![ [Diode characteristics](https://commons.wikimedia.org/wiki/File:Diode_current_wiki.png)](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/diode-characteristics.png){#fig:diode-char width="10cm"}
 
 A diode is a semiconductor device that has two terminals, an anode and a cathode. These terminals are represented by (-) for the cathode and (+) for the anode on the diagram in Figure @fig:diode-char. Diodes are made out of n-doped and p-doped semiconductors. Visit this [PhET simulation](https://phet.colorado.edu/en/simulation/semiconductor) for a good example of how these work.
 
@@ -36,7 +36,7 @@ The HLMP-C625 light emitting diode used in this lab acts electrically like any o
 
 ## Photodiode
 
-![Diagram and schematic symbol for a PIN silicon photodiode.](tmp.png){#fig:photodiode}
+![Diagram and schematic symbol for a PIN silicon photodiode.](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/photodiode.png){#fig:photodiode}
 
 The PD204 photodiode used in this experiment is a p-intrinsic-n (PIN) silicon diode operated in reverse bias. A sketch of the photodiode structure is shown in Figure @fig:photodiode. The very thin p-type conducting layer acts as a window to admit light into the crystal. The reverse bias voltage maintains a strong electric field throughout the intrinsic region forming an extended depletion layer. The depletion layer should be thicker than the absorption length for photons in silicon in order to maximize the efficiency. An incident photon whose energy exceeds the bandgap energy can be absorbed to produce an electron-hole pair by photoelectric excitation of a valence electron into the conduction band. The charge carriers are swept out of the crystal by the internal electric field to appear as a photocurrent at the terminals. The photocurrent is proportional to light intensity over a range of more than 6 orders of magnitude.
 
@@ -60,7 +60,7 @@ $$S_{\lambda} = S_{940}~RSR(\lambda)$$
 
 Figure @fig:pd204 shows the RSR from the PD204 data sheet. You can see the maximum sensitivity is around 940 nm.
 
-![PD204 Relative Spectral Sensitivity](lab6fig/pd204-rss.png){#fig:pd204 width="7cm"}
+![PD204 Relative Spectral Sensitivity](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/pd204-rss.png){#fig:pd204 width="7cm"}
 
 # Current to Voltage Amplifier (Transimpedance Amplifier)
 
@@ -186,6 +186,6 @@ $$F(lm) = 683 ~y(\lambda)~P(W)$$
 
 The dimensionless quantity $y(\lambda)$ is the photopic standard luminosity function and is shown in Figure @fig:lum and tabulated in the Datasheets section of Canvas. At $\lambda$ = 555 nm, where the eye is most sensitive, $y(\lambda)$ = 1. Therefore, two sources with the same luminous flux will have the same subjective brightness to a human observer (even though the outputted power may be different). This kind of color corrected unit is helpful if you want to design a control panel with lots of colored lights, and you want them all to have the same perceived brightness. We may also be interested in the luminous flux per unit area (similar to intensity). This is measured in units of lux, where 1 lux = 1 $lm/m^2$.
 
-![The photopic standard luminosity function](tmp.png){#fig:lum}
+![The photopic standard luminosity function](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/lum.png){#fig:lum}
 
 # Appendix B: Light Output in Lumens for Various Light Sources {#appendix-b-light-output-in-lumens-for-various-light-sources .unnumbered}
