@@ -1,3 +1,7 @@
+---
+title: 'Lab 6'
+---
+
 # Goals
 
 In this lab, you will design and build a photometer (optical detector) based on a silicon photodiode and a current-to-voltage amplifier whose output is proportional to the intensity of incident light. First, you will use it to measure the room light intensity. Then you will set up and investigate an optical communication link in which the transmitter is a light emitting diode (LED) and the receiver is your photodiode detector.
@@ -24,7 +28,7 @@ Applications:
 
 # Diodes
 
-![ [Diode characteristics](https://commons.wikimedia.org/wiki/File:Diode_current_wiki.png)](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/diode-characteristics.png){#fig:diode-char width="10cm"}
+![ [Diode characteristics](https://commons.wikimedia.org/wiki/File:Diode_current_wiki.png)](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/diode-characteristics.png){#fig:diode-char width="15cm"}
 
 A diode is a semiconductor device that has two terminals, an anode and a cathode. These terminals are represented by (-) for the cathode and (+) for the anode on the diagram in Figure @fig:diode-char. Diodes are made out of n-doped and p-doped semiconductors. Visit this [PhET simulation](https://phet.colorado.edu/en/simulation/semiconductor) for a good example of how these work.
 
@@ -60,7 +64,7 @@ $$S_{\lambda} = S_{940}~RSR(\lambda)$$
 
 Figure @fig:pd204 shows the RSR from the PD204 data sheet. You can see the maximum sensitivity is around 940 nm.
 
-![PD204 Relative Spectral Sensitivity](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/pd204-rss.png){#fig:pd204 width="7cm"}
+![PD204 Relative Spectral Sensitivity](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/pd204-rss.png){#fig:pd204 width="15cm"}
 
 # Current to Voltage Amplifier (Transimpedance Amplifier)
 
@@ -70,21 +74,21 @@ $$G=\frac{V_{out}}{I_{in}}=-R_F$$
 
 This gain has the units of impedance i.e., Ohms, and it is often called a transimpedance gain. The current-tovoltage amplifier is also called a transimpedance amplifier. This type of amplifier is very common in research labs, and is used to amplify the current from photodiodes, photo multiplier tubes, ion detectors, etc.
 
-![Photodetector circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/photodetector.png){#fig:photodetector width="10cm"}
+![Photodetector circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/photodetector.png){#fig:photodetector width="15cm"}
 
 In our photometer circuit the current $I_{in}$ flows through the reverse-biased photodiode when it is illuminated (it flows out of the op-amp negative input node and the resulting $V_{out}$ is positive). The feedback capacitor $C_F$ enhances stability, i.e., it helps to avoid spontaneous oscillations of the op-amp by reducing the bandwidth of the amplifier (just like an active low-pass filter).
 
 # Optical Communication Link
 
-The basic optical communication link is composed of two circuits (Figure@fig:photodetector and Figure @fig:ocl). The circuit in Figure @fig:ocl uses an AC voltage source to produce a light signal from the LED. The circuit in Figure @fig:photodetector is the photometer, composed of a photodiode connected to a transimpedance amplifier to convert the light into a measurable voltage.
+The basic optical communication link is composed of two circuits (Figure @fig:photodetector and Figure @fig:ocl). The circuit in Figure @fig:ocl uses an AC voltage source to produce a light signal from the LED. The circuit in Figure @fig:photodetector is the photometer, composed of a photodiode connected to a transimpedance amplifier to convert the light into a measurable voltage.
 
-![Optical communication link circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/ocl.png){#fig:ocl width="10cm"}
+![Optical communication link circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/ocl.png){#fig:ocl width="15cm"}
 
 # LF356 Pin Out and Schematic
 
 All op-amp circuits start out by making the basic power connections. Op-amps are active components, which means they need external power to function, unlike passive components such as resistors and capacitors.
 
-![LF356 schematic and pin-out](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/lf356.png){#fig:lf356 width="10cm"}
+![LF356 schematic and pin-out](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/lf356.png){#fig:lf356 width="15cm"}
 
 # Useful Readings
 
@@ -100,7 +104,7 @@ Answer the following questions using Mathematica for the plots. You can use eith
 
 ## Simple diodes {#sec:simp-diodes}
 
-1.  Consider the circuit in Figure@fig:diode-cir. If the diode is ideal with a threshold voltage of 0.6 V and a breakdown voltage of 50 V, predict the behavior of the current $I$ (consider clockwise current to be positive) and $V_{out}$ as a function of the source voltage $V_{in}$. Make a table of the predicted $I$ and $V_{out}$ for the following values of $V_{in}$: -2 V, 0 V, +0.5 V, +0.6 V, +0.7 V, +1 V, +2 V, +4 V.
+1.  Consider the circuit in Figure @fig:diode-cir. If the diode is ideal with a threshold voltage of 0.6 V and a breakdown voltage of 50 V, predict the behavior of the current $I$ (consider clockwise current to be positive) and $V_{out}$ as a function of the source voltage $V_{in}$. Make a table of the predicted $I$ and $V_{out}$ for the following values of $V_{in}$: -2 V, 0 V, +0.5 V, +0.6 V, +0.7 V, +1 V, +2 V, +4 V.
 
 2.  Now, consider the case where $V_{in}$ is a sine wave with a 3 V amplitude (6 V peak-to-peak) centered on $V_{in}$ = 0 V. Predict $V_{out}$ and $I$ as a function of time and sketch your predictions (by hand or with Mathematica) over 3 periods.
 
@@ -142,9 +146,9 @@ Answer the following questions using Mathematica for the plots. You can use eith
 
 # Test with Inverting Amplifier
 
-![Inverting amplifier circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/inv-amp-cir.png){#fig:inv-amp-cir width="10cm"}
+![Inverting amplifier circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/inv-amp-cir.png){#fig:inv-amp-cir width="15cm"}
 
-1.  We will first build the amplifier in a normal voltage amplifier configuration to test the setup and all the connections. Build the inverting amplifier circuit shown in Figure@fig:inv-amp-cir. Use a value for $R_F = R$ close to what you found in @sec:trans-pre, and a 10 pF capacitor $C_F$ in parallel with the feedback resistor to avoid spontaneous oscillations. Draw the schematic in your lab notebook and record the values of the components.
+1.  We will first build the amplifier in a normal voltage amplifier configuration to test the setup and all the connections. Build the inverting amplifier circuit shown in Figure @fig:inv-amp-cir. Use a value for $R_F = R$ close to what you found in @sec:trans-pre, and a 10 pF capacitor $C_F$ in parallel with the feedback resistor to avoid spontaneous oscillations. Draw the schematic in your lab notebook and record the values of the components.
 
 2.  Predict the low frequency gain and 3 dB frequency of the circuit. HINT: Look at your prelab answers. This will be the $R_FC_F$ time constant from@sec:trans-pre; in this circuit the time constant will be determined by the feedback resistor and capacitor (not the input resistor). Design a test to ensure the amplifier is working as predicted at low frequency (much lower than the cutoff). Don't bother testing the high-frequency behavior.
 
