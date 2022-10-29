@@ -38,11 +38,9 @@ Applications:
 
 # Inverting Amplifier Theory
 
-::: circuitikz
-(0,0) node\[op amp, anchor=-\](OA) (OA.+) -- ++((-.5,0) to ++(0,-.5) node\[ground\] (OA.-) -- ++((-.5,0) to ++(0,1) coordinate(FC) to \[R, l\_=$R$, \*-\] ++(-2,0) to \[short, -o\] ++(0,0) node\[anchor = east\]$V_{in}$ (FC) -- ++(.75,0) to \[R=$R_F$\] ++(1.5,0) to \[short\] ++(1,0) coordinate(FD) (FD) to \[short, -\*\] (OA.out -\| FD) (OA.out) to \[short, -o\] ++(1.5,0) node\[anchor = west\]$V_{out}$ ;
-:::
+![Inverting amplifier](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab5fig/invamp.png){#fig:invamp width="10cm"}
 
-The basic inverting amplifier is shown in Figure [\[invamp\]](#invamp){reference-type="ref" reference="invamp"}. We can use the Golden Rules to determine the low-frequency gain. Since the positive input is grounded, the op-amp will do everything it can to keep the negative input at ground as well. In the limit of infinite open loop gain the inverting input of the op-amp is a [virtual ground]{.underline}, a circuit node that will stay at ground as long as the circuit is working, even though it is not directly connected to ground. When ***A is infinite,*** the gain of an inverting amplifier is
+The basic inverting amplifier is shown in Figure @fig:invamp. We can use the Golden Rules to determine the low-frequency gain. Since the positive input is grounded, the op-amp will do everything it can to keep the negative input at ground as well. In the limit of infinite open loop gain the inverting input of the op-amp is a [virtual ground]{.underline}, a circuit node that will stay at ground as long as the circuit is working, even though it is not directly connected to ground. When ***A is infinite,*** the gain of an inverting amplifier is
 
 $$G_0=\frac{V_{out}}{V_{in}}=-\frac{R_f}{R}$$
 
@@ -58,7 +56,7 @@ The above formulas are still correct when $A$ and/or $B$ depend on frequency. $B
 
 $$A(f)=\frac{A_0}{1+j\frac{f}{f_0}}$$
 
-The 3 B frequency, $f_0$, is usually very low, around 10 Hz. Data sheets do not usually give $f_0$ directly; instead they give the DC gain, $A_0$, and the unity gain frequency $f_T$, which is the frequency where the magnitude of the open loop gain $A$ is equal to one. The relation between $A_0$, $f_0$, and $f\_T$ is
+The 3 B frequency, $f_0$, is usually very low, around 10 Hz. Data sheets do not usually give $f_0$ directly; instead they give the DC gain, $A_0$, and the unity gain frequency $f_T$, which is the frequency where the magnitude of the open loop gain $A$ is equal to one. The relation between $A_0$, $f_0$, and $f_T$ is
 
 $$f_{T} = A_{0}f_{0}$$
 
@@ -90,19 +88,19 @@ This is the same (except for the sign) as the non-inverting result when the clos
 (0,0) node\[op amp, anchor=-\](OA) (OA.+) -- ++((0,0) to ++(0,-.5) node\[ground\] (OA.-) -- ++(0,0) to \[short, \*-\] ++(0,1.5) to \[R, l=$R_F$\] ++(2.5,0) to \[short,-\*\] ++(0,-2) (OA.-) to \[short, -\*\] ++(-.5,0) coordinate(FC) to \[R, l\_=$R_2$\] ++(-2,0) to \[short, -o\] ++(0,0) node\[anchor = east\]$V_{2}$ (FC) -- ++(0,1) to \[R, l\_=$R_1$\] ++(-2,0) to \[short, -o\] ++(0,0) node\[anchor = east\]$V_{1}$ (FC) -- ++(0,-1) to \[R, l\_=$R_3$\] ++(-2,0) to \[short, -o\] ++(0,0) node\[anchor = east\]$V_{3}$ (OA.out) to \[short, -o\] ++(.75,0) node\[anchor = west\]$V_{out}$ ;
 :::
 
-The Summing Amplifier, shown in Figure [\[sumamp\]](#sumamp){reference-type="ref" reference="sumamp"}, is a very flexible circuit based upon the standard inverting op-amp configuration that can be used for combining multiple inputs. The standard inverting amplifier, shown in Figure [\[invamp\]](#invamp){reference-type="ref" reference="invamp"}, has a single input voltage, $V_{in}$, applied to the inverting input terminal. If we add more input resistors to the input, the circuit can become a voltage adder with different gain for each input. There are many applications for summing amplifiers including audio mixers and digital to analog converters. Using the Golden Rules we can determine the transfer function listed below.
+![Summing amplifier](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab5fig/sumamp.png){#fig:sumamp width="10cm"}
+
+The Summing Amplifier, shown in Figure @fig:sumamp, is a very flexible circuit based upon the standard inverting op-amp configuration that can be used for combining multiple inputs. The standard inverting amplifier, shown in Figure @fig:invamp, has a single input voltage, $V_{in}$, applied to the inverting input terminal. If we add more input resistors to the input, the circuit can become a voltage adder with different gain for each input. There are many applications for summing amplifiers including audio mixers and digital to analog converters. Using the Golden Rules we can determine the transfer function listed below.
 
 $$V_{out}=-\left[V_1\left(\frac{R_F}{R_1}\right) + V_2\left(\frac{R_F}{R_2}\right) + V_3\left(\frac{R_F}{R_3}\right)\right]$$
 
-This circuit has many applications including working as an adder in any basis-set you specify. If you only restrict yourself to input voltages of 0 or 1 V (or on and off), you get to a binary adder and can convert binary signals to analog (e.g. base 2 to base 10). Digital-to-analog converters are found in every research lab (or computer, or phone, etc.) where you want to create any value of a signal from just 1's and 0's. If you want a refresher on binary or counting in binary, you can try the Wikipedia entry: <https://en.wikipedia.org/wiki/Binary_number#Counting_in_binary>
+This circuit has many applications including working as an adder in any basis-set you specify. If you only restrict yourself to input voltages of 0 or 1 V (or on and off), you get to a binary adder and can convert binary signals to analog (e.g. base 2 to base 10). Digital-to-analog converters are found in every research lab (or computer, or phone, etc.) where you want to create any value of a signal from just 1's and 0's. If you want a refresher on binary or counting in binary, you can [this the Wikipedia entry](https://en.wikipedia.org/wiki/Binary_number#Counting_in_binary).
 
 # Integrator Theory
 
-::: circuitikz
-(0,0) node\[op amp, anchor=-\](OA) (OA.+) -- ++((-.5,0) to ++(0,-.5) node\[ground\] (OA.-) -- ++((-.5,0) to ++(0,1) coordinate(FC) to \[R, l\_=$R$, \*-\] ++(-2,0) to \[short, -o\] ++(0,0) node\[anchor = east\]$V_{in}$ (FC) -- ++(.75,0) to \[C=$C$\] ++(1.5,0) to \[short\] ++(1,0) coordinate(FD) (FD) to \[short, -\*\] (OA.out -\| FD) (OA.out) to \[short, -o\] ++(1.5,0) node\[anchor = west\]$V_{out}$ ;
-:::
+![Integrator](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab5fig/integrator.png){#fig:integrator width="10cm"}
 
-The basic op-amp integrator is shown in Figure [\[integrator\]](#integrator){reference-type="ref" reference="integrator"}. As compared to the inverting amplifier in Figure [\[invamp\]](#invamp){reference-type="ref" reference="invamp"}, the only change is a replacement of the feedback resistor $R_F$ with a capacitor $C$. An integrator is the same circuit as a low-pass filter. If you are interested in what frequencies get passed, you call it a low-pass filter. If you are interested in integrating the input signal, you call it an integrator. We can understand how the integrator works by applying the Golden Rules and remembering the defining equation for capacitors. Just as in the integrating amplifier, the Golden Rules tells us that $V_-\approx V_+ = 0$ and that the current across both components is the same because no current flows into the op-amp. We label $I_R$ as the current through the resistor, which is $V_{in}/R$ since $V_-$ is at ground. We label $I_C$ as the current across the capacitor. The defining equation for capacitors is $Q=CV$. The current through a capacitor is $I=dQ/dt = d(CV)/dt = CdV/dt$. Therefore, the equation $I_R=I_C$ becomes:
+The basic op-amp integrator is shown in Figure @fig:integrator. As compared to the inverting amplifier in Figure @fig:invamp, the only change is a replacement of the feedback resistor $R_F$ with a capacitor $C$. An integrator is the same circuit as a low-pass filter. If you are interested in what frequencies get passed, you call it a low-pass filter. If you are interested in integrating the input signal, you call it an integrator. We can understand how the integrator works by applying the Golden Rules and remembering the defining equation for capacitors. Just as in the integrating amplifier, the Golden Rules tells us that $V_-\approx V_+ = 0$ and that the current across both components is the same because no current flows into the op-amp. We label $I_R$ as the current through the resistor, which is $V_{in}/R$ since $V_-$ is at ground. We label $I_C$ as the current across the capacitor. The defining equation for capacitors is $Q=CV$. The current through a capacitor is $I=dQ/dt = d(CV)/dt = CdV/dt$. Therefore, the equation $I_R=I_C$ becomes:
 
 $$\frac{V_{in}}{R}=-C~\frac{dV_{out}}{dt}$$
 
@@ -135,13 +133,13 @@ Answer the following questions using Mathematica for the plots. You can use eith
 
 ## Inverting amplifier
 
-1.  Calculate the values of low frequency gain $G_0$ and the bandwidth $f_B$ for the inverting amplifier in Figure [\[invamp\]](#invamp){reference-type="ref" reference="invamp"} for the following circuit you will build in lab with the following resistors: $R_F = 10 ~k\Omega$ and $R = 10 ~\Omega$ .
+1.  Calculate the values of low frequency gain $G_0$ and the bandwidth $f_B$ for the inverting amplifier in Figure @fig:invamp for the following circuit you will build in lab with the following resistors: $R_F = 10 ~k\Omega$ and $R = 10 ~\Omega$ .
 
 2.  Graph a Bode plot for the open loop gain and the closed loop gain for the circuit from above on the same graph using Mathematica (making sure to label axes and curves).
 
 ## Summing amplifier - digital to analog converter
 
-1.  Design a three input summing amplifier (Figure [\[sumamp\]](#sumamp){reference-type="ref" reference="sumamp"}) that can create an analog voltage of integers from 0 to -7 volts ($|V_{out}|= 0, 1, 2, 3, 4, 5, 6,~ and ~7 ~V$) using only two possible input states on each input ($V_{low}= 0 ~V$ and $V_{high} = 1~ V$). Draw a schematic of your circuit and label all the resistors. *Hint: Write down the binary numbers from 000 binary = 0 in decimal to 111 binary = 7 in decimal.* Think about the relative values of $R_1$, $R_2$, and $R_3$. We suggest you use $R_F = 40 k\Omega$.
+1.  Design a three input summing amplifier (Figure @fig:sumamp) that can create an analog voltage of integers from 0 to -7 volts ($|V_{out}|= 0, 1, 2, 3, 4, 5, 6,~ and ~7 ~V$) using only two possible input states on each input ($V_{low}= 0 ~V$ and $V_{high} = 1~ V$). Draw a schematic of your circuit and label all the resistors. *Hint: Write down the binary numbers from 000 binary = 0 in decimal to 111 binary = 7 in decimal.* Think about the relative values of $R_1$, $R_2$, and $R_3$. We suggest you use $R_F = 40 k\Omega$.
 
 2.  Draw a table that lists the input voltages and corresponding output voltages to create $|V_{out}|= 0, 1, 2, 3, 4, 5, 6,~ and ~7 ~V$.
 
@@ -149,7 +147,7 @@ Answer the following questions using Mathematica for the plots. You can use eith
 
 So far you have been looking at the output versus frequency (Bode plots). Now you will also consider the output versus time.
 
-1.  Design an integrator based on Figure [\[integrator\]](#integrator){reference-type="ref" reference="integrator"} and the discussion above. Choose values for the components (resistors and capacitors) and describe why you chose those values.
+1.  Design an integrator based on Figure @fig:integrator and the discussion above. Choose values for the components (resistors and capacitors) and describe why you chose those values.
 
 2.  List some possible applications for the integrator.
 
@@ -165,17 +163,15 @@ So far you have been looking at the output versus frequency (Bode plots). Now yo
 
 All op-amp circuits start out by making the basic power connections. Op-amps are active components, which means they need external power to function unlike passive components such as resistors.
 
-::: circuitikz
-(0, 0) node\[op amp\] (opamp) ; (opamp.-) node\[above right\]2 node\[anchor = east\]$V_-$; (opamp.+) node\[above right\]3 node\[anchor = east\]$V_+$; (opamp.out) node \[above left\]6 node\[anchor = west\]$V_{out}$; (opamp.up) node\[above right\]7 to (-.08,1.25) node\[anchor = south\]$+15~V$; (opamp.down) node\[below right\]4 to (-0.08,-1.25) node\[anchor = north\]$-15~V$; (2.5,0.75) node\[dipchip, anchor=pin 1, num pins=8\]LF356;
-:::
+![LF356 schematic and pin-out](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab5fig/lf356.png){#fig:lf356 width="10cm"}
 
-![Good placement of op-amp and bypass capacitors on a protoboard. Note that short wires are used for all connections.](lab4fig/pb-example.png){#pb width="10cm"}
+![Good placement of op-amp and bypass capacitors on a protoboard. Note that short wires are used for all connections.](lab5fig/pb-example.png){#pb width="10cm"}
 
 # General Op-Amp Tips
 
 **These are reminders of the basics steps you should always follow when working with op-amps.**
 
-1.  This experiment will use both +15 V and --15 V to power the LF356 op-amp. [Make sure you **unplug** the DC supplies while wiring your op-amp (you may find it useful to plug them into their own power strip). Everyone makes mistakes in wiring-up circuits. You should always check your circuit over before applying power.]{style="color: red"} Figure [\[lf356\]](#lf356){reference-type="ref" reference="lf356"} shows a pin-out for the LF356 chip. Familiarize yourself with the layout. The following procedure will help you wire up a circuit accurately:
+1.  This experiment will use both +15 V and --15 V to power the LF356 op-amp. <span style="color: red;">Make sure you **unplug** the DC supplies while wiring your op-amp (you may find it useful to plug them into their own power strip). Everyone makes mistakes in wiring-up circuits. You should always check your circuit over before applying power.</span> Figure @fig:lf356 shows a pin-out for the LF356 chip. Familiarize yourself with the layout. The following procedure will help you wire up a circuit accurately:
 
     1.  Draw a complete schematic in your lab notebook, including all ground and power connections, and all IC pin numbers. Try to layout your prototype so the parts are arranged in the same way as on the schematic, as far as possible.
 
@@ -183,21 +179,20 @@ All op-amp circuits start out by making the basic power connections. Op-amps are
 
     3.  Adhere to a color code for wires. For example:
 
-        -   [0V (ground) Green]{style="color: OliveGreen"}
+        -   <span style="color: green;">0V (ground) Green</span>
 
-        -   [+15V Red]{style="color: red"}
+        -   <span style="color: red;">+15V Red</span>
 
-        -   [-15V Blue]{style="color: blue"}
+        -   <span style="color: blue;">-15V Blue</span>
 
-2.  The op-amp chip sits across a groove in the prototyping board (see Figure [1](#pb){reference-type="ref" reference="pb"}). Before inserting a chip, ensure the pins are straight (using a needle-nose pliers or something similar). After insertion, check visually that no pin is broken or bent under the chip. To remove the chip, use a small screwdriver in the groove to pry it out.
+2.  The op-amp chip sits across a groove in the prototyping board (see Figure @fig:pb). Before inserting a chip, ensure the pins are straight (using a needle-nose pliers or something similar). After insertion, check visually that no pin is broken or bent under the chip. To remove the chip, use a small screwdriver in the groove to pry it out.
 
-3.  You will have less trouble with spontaneous oscillations if the circuit layout is neat and compact, in particular the feedback path should be as short as possible to reduce unwanted capacitive coupling (see Figure [1](#pb){reference-type="ref" reference="pb"}). Also, wire around the chip rather than over it.
-
-4.  To help prevent spontaneous oscillations due to unintended coupling via the power supplies, use bypass capacitors to filter the power supply lines. A bypass capacitor between each power supply lead and ground will provide a miniature current "reservoir" that can quickly supply current when needed. This capacitor is normally in the range 1--10 µF. [Compact capacitors in this range are usually ***polarized***, meaning that one terminal must always be positive relative to the other. If you put a polarized capacitor in backwards, it will burn out.]{style="color: red"} You will probably hear a pop and smell something foul. Please don't do this. The negative side should have an arrow on the capacitor. Also, the positive side should have a longer lead but this is not a good identification method as the leads can (and should) be cut. Bypass capacitors should be placed close to the op-amp pins. If you are connecting the +15 V supply to ground, the negative capacitor lead is connected to ground and the positive lead is connected to +15 V. If you are connecting the --15 V supply to ground, the negative capacitor lead is connected to --15 V and the positive lead is connected to ground.
+3.  You will have less trouble with spontaneous oscillations if the circuit layout is neat and compact, in particular the feedback path should be as short as possible to reduce unwanted capacitive coupling (see Figure @fig:pb). Also, wire around the chip rather than over it.
+4.  To help prevent spontaneous oscillations due to unintended coupling via the power supplies, use bypass capacitors to filter the power supply lines. A bypass capacitor between each power supply lead and ground will provide a miniature current "reservoir" that can quickly supply current when needed. This capacitor is normally in the range 1-10 µF. <span style="color: red;">Compact capacitors in this range are usually ***polarized***, meaning that one terminal must always be positive relative to the other. If you put a polarized capacitor in backwards, it will burn out.</span> You will probably hear a pop and smell something foul. Please don't do this. The negative side should have an arrow on the capacitor. Also, the positive side should have a longer lead but this is not a good identification method as the leads can (and should) be cut. Bypass capacitors should be placed close to the op-amp pins. If you are connecting the +15 V supply to ground, the negative capacitor lead is connected to ground and the positive lead is connected to +15 V. If you are connecting the -15 V supply to ground, the negative capacitor lead is connected to -15 V and the positive lead is connected to ground.
 
 # Inverting Amplifier Application - Frequency Dependent Gain
 
-1.  Build the inverting amplifier shown in Figure [\[invamp\]](#invamp){reference-type="ref" reference="invamp"}, with $R_F = 100 ~k\Omega$ and $R = 10 ~k\Omega$. Measure $R$ and $R_F$ with the DMM before inserting them into the circuit board. Predict $G_0$ and $f_B$ from these measured values and the op-amps value of $f_T$ from the data sheet. (You should be able to review your prelab work here!)
+1.  Build the inverting amplifier shown in Figure @fig:invamp, with $R_F = 100 ~k\Omega$ and $R = 10 ~k\Omega$. Measure $R$ and $R_F$ with the DMM before inserting them into the circuit board. Predict $G_0$ and $f_B$ from these measured values and the op-amps value of $f_T$ from the data sheet. (You should be able to review your prelab work here!)
 
 2.  Use the function generator to measure the low frequency gain. What frequency should you use to test the low frequency gain (i.e., what frequency should the signal be below?) Consider the gain-bandwidth product and how it relates to your circuit. What is the predicted gain for the frequency you chose? Measure the low frequency gain $G_0$ by measuring $V_{in}$ and $V_{out}$ using the scope (as you did in Lab 4). Do your measurements agree with your predictions?
 
@@ -211,7 +206,7 @@ All op-amp circuits start out by making the basic power connections. Op-amps are
 
 ## First tests
 
-1.  Modify your basic inverting op-amp circuit to make it a summing amplifier as shown in Figure [\[sumamp\]](#sumamp){reference-type="ref" reference="sumamp"}. Use the component values you determined in your prelab for the resistors (you may want to check with your instructor to be sure they make sense). Draw the schematic in your notebook and label all components. Measure the resistors before inserting them into your circuit and record the values.
+1.  Modify your basic inverting op-amp circuit to make it a summing amplifier as shown in Figure @fig:sumamp. Use the component values you determined in your prelab for the resistors (you may want to check with your instructor to be sure they make sense). Draw the schematic in your notebook and label all components. Measure the resistors before inserting them into your circuit and record the values.
 
 2.  Determine the transfer function for your exact component values. What is $V_{out}$ in terms of $V_1$, $V_2$, and $V_3$?
 
