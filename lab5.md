@@ -84,10 +84,6 @@ This is the same (except for the sign) as the non-inverting result when the clos
 
 # Summing Amplifier Theory
 
-::: circuitikz
-(0,0) node\[op amp, anchor=-\](OA) (OA.+) -- ++((0,0) to ++(0,-.5) node\[ground\] (OA.-) -- ++(0,0) to \[short, \*-\] ++(0,1.5) to \[R, l=$R_F$\] ++(2.5,0) to \[short,-\*\] ++(0,-2) (OA.-) to \[short, -\*\] ++(-.5,0) coordinate(FC) to \[R, l\_=$R_2$\] ++(-2,0) to \[short, -o\] ++(0,0) node\[anchor = east\]$V_{2}$ (FC) -- ++(0,1) to \[R, l\_=$R_1$\] ++(-2,0) to \[short, -o\] ++(0,0) node\[anchor = east\]$V_{1}$ (FC) -- ++(0,-1) to \[R, l\_=$R_3$\] ++(-2,0) to \[short, -o\] ++(0,0) node\[anchor = east\]$V_{3}$ (OA.out) to \[short, -o\] ++(.75,0) node\[anchor = west\]$V_{out}$ ;
-:::
-
 ![Summing amplifier](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab5fig/sumamp.png){#fig:sumamp width="10cm"}
 
 The Summing Amplifier, shown in Figure @fig:sumamp, is a very flexible circuit based upon the standard inverting op-amp configuration that can be used for combining multiple inputs. The standard inverting amplifier, shown in Figure @fig:invamp, has a single input voltage, $V_{in}$, applied to the inverting input terminal. If we add more input resistors to the input, the circuit can become a voltage adder with different gain for each input. There are many applications for summing amplifiers including audio mixers and digital to analog converters. Using the Golden Rules we can determine the transfer function listed below.
@@ -165,7 +161,7 @@ All op-amp circuits start out by making the basic power connections. Op-amps are
 
 ![LF356 schematic and pin-out](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab5fig/lf356.png){#fig:lf356 width="10cm"}
 
-![Good placement of op-amp and bypass capacitors on a protoboard. Note that short wires are used for all connections.](lab5fig/pb-example.png){#pb width="10cm"}
+![Good placement of op-amp and bypass capacitors on a protoboard. Note that short wires are used for all connections.](lab5fig/pb-example.png){#fig:pb width="10cm"}
 
 # General Op-Amp Tips
 

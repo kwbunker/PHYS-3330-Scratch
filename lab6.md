@@ -1,5 +1,17 @@
 ---
-title: 'Lab 6'
+title: "Lab 6"
+subtitle: "Optical Communication Link"
+author: [Department of Physics | University of Colorado Boulder]
+date: '2022-10-31'
+caption-justification: centering
+toc: true
+titlepage: true
+header-left: "\\thetitle"
+header-center: "Optical Communication Link"
+header-right: "PHYS 3330"
+footer-left: "\\thedate"
+footer-center: "\\theauthor"
+footer-right: "Page \\thepage"
 ---
 
 # Goals
