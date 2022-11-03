@@ -37,7 +37,7 @@ Applications:
 
 # Definitions
 
-$\mathbf{h_{fe}}$ **or** $\bm{\beta}$ - transistor current gain intrinsic to the transistor itself.
+$\mathbf{h_{fe}}$ **or** $\mathbf{\beta}$ - transistor current gain intrinsic to the transistor itself.
 
 $\mathbf{V_{E},~V_{B},~V_{C}}$ - voltages at the emitter, base, and collector, respectively. These are the quiescent (DC) voltages.
 
@@ -51,9 +51,9 @@ An electrical signal can be amplified using a device that allows a small current
 
 In many practical applications it is better to use an op-amp as a source of gain rather than to build an amplifier from discrete transistors. A good understanding of transistor fundamentals is nevertheless essential because op-amps are built from transistors. We will learn later about digital circuits, which are also made from transistors. In addition to the importance of transistors as components of op-amps, digital circuits, and an enormous variety of other integrated circuits, single transistors (usually called "discrete" transistors) are used in many applications. They are important as interface devices between integrated circuits and sensors, indicators, and other devices used to communicate with the outside world. High-performance amplifiers operating from DC through microwave frequencies use discrete transistor "front-ends" to achieve the lowest possible noise. Discrete transistors are generally much faster than op-amps. The device we will use this week has a gain-bandwidth product of 300 MHz (compared to 5 MHz for the LF356 op-amp you have been using).
 
-The three terminals of a bipolar transistor are called the emitter, base, and collector (Figure [1](#NPN){reference-type="ref" reference="NPN"}). A small current into the base controls a large current flow from the collector to the emitter. The current at the base is typically about 1% of the collector-emitter current. This means that the transistor acts as a current amplifier with a typical current gain ($h_{fe}$ or $\beta$) of about 100. Moreover, the large collector current flow is almost independent of the voltage across the transistor from collector to emitter. This makes it possible to obtain a large amplification of voltage by having the collector current flow through a resistor.
+The three terminals of a bipolar transistor are called the emitter, base, and collector (Figure @fig:NPN). A small current into the base controls a large current flow from the collector to the emitter. The current at the base is typically about 1% of the collector-emitter current. This means that the transistor acts as a current amplifier with a typical current gain ($h_{fe}$ or $\beta$) of about 100. Moreover, the large collector current flow is almost independent of the voltage across the transistor from collector to emitter. This makes it possible to obtain a large amplification of voltage by having the collector current flow through a resistor.
 
-![Diagram of an NPN bipolar junction transistor (left) and schematic symbol (right)](tmp.png){#NPN}
+![Diagram of an NPN bipolar junction transistor (left) and schematic symbol (right)](tmp.png){#fig:NPN}
 
 # Current Amplifier Model of a Bipolar Transistor
 
@@ -75,13 +75,9 @@ The difference between $I_C$ and $I_E$ is almost never important since $h_{fe}$ 
 
 # Emitter Follower and Common Emitter Amplifier
 
-::: circuitikz
-(0,0) node\[npn\](Q); (Q.B) to \[short, -o\] ++(-1,0) node\[anchor = east\]$V_{in}$; (Q.E) to \[R, l=$R_E$\] ++(0,-2) node\[ground\]; (Q.E) to \[short,\*-o\] ++(1.5,0) node\[anchor = west\]$V_{out}$; (Q.C) to \[short, -o\] ++(0,2) node\[anchor = south\]$+15~V$;
-:::
+![Emitter follower transistor circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab7fig/emitterf.png){#fig:emitterf width="10cm"}
 
-::: circuitikz
-(0,0) node\[npn\](Q); (Q.B) to \[short, -o\] ++(-1,0) node\[anchor = east\]$V_{in}$; (Q.E) to \[R, l=$R_E$\] ++(0,-2) node\[ground\]; (Q.C) to \[short,\*-o\] ++(1.5,0) node\[anchor = west\]$V_{out}$; (Q.C) to \[R, l=$R_C$\] ++(0,2) to \[short, -o\] ++(0,0) node\[anchor = south\]$+15~V$;
-:::
+![Emitter amplifier transistor circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab7fig/emittera.png){#fig:emittera width="10cm"}
 
 We will begin by constructing a common emitter amplifier, which operates on the principle of a current amplifier. However, a major fault of the common emitter amplifier is its high output impedance. This problem can be fixed by adding a second circuit, the emitter follower, as a second stage. The common-emitter amplifier and the emitter follower are the most common bipolar transistor circuits.
 
