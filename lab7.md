@@ -1,3 +1,22 @@
+---
+title: "Lab 7"
+subtitle: "Bipolar Junction Transistors"
+author: [Department of Physics | University of Colorado Boulder]
+date: '2022-10-31'
+caption-justification: centering
+toc: true
+toc-own-page: true
+titlepage: true
+header-left: "\\thetitle"
+header-center: "Bipolar Junction Transistors"
+header-right: "PHYS 3330"
+footer-left: "\\thedate"
+footer-center: "\\theauthor"
+footer-right: "Page \\thepage"
+listings-no-page-break: true
+code-block-font-size: \scriptsize
+---
+
 # Goals
 
 In this lab, you will begin learning how transistors work by creating a dual-stage amplifier out of a common emitter amplifier plus an emitter follower and use this as an audio amplifier.

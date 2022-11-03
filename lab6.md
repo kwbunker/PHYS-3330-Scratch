@@ -5,6 +5,7 @@ author: [Department of Physics | University of Colorado Boulder]
 date: '2022-10-31'
 caption-justification: centering
 toc: true
+toc-own-page: true
 titlepage: true
 header-left: "\\thetitle"
 header-center: "Optical Communication Link"
@@ -12,6 +13,8 @@ header-right: "PHYS 3330"
 footer-left: "\\thedate"
 footer-center: "\\theauthor"
 footer-right: "Page \\thepage"
+listings-no-page-break: true
+code-block-font-size: \scriptsize
 ---
 
 # Goals
@@ -40,11 +43,11 @@ Applications:
 
 # Diodes
 
-![ [Diode characteristics](https://commons.wikimedia.org/wiki/File:Diode_current_wiki.png)](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/diode-characteristics.png){#fig:diode-char width="15cm"}
-
 A diode is a semiconductor device that has two terminals, an anode and a cathode. These terminals are represented by (-) for the cathode and (+) for the anode on the diagram in Figure @fig:diode-char. Diodes are made out of n-doped and p-doped semiconductors. Visit this [PhET simulation](https://phet.colorado.edu/en/simulation/semiconductor) for a good example of how these work.
 
 The fundamental property of a diode is its tendency to conduct electric current in only one direction. The diode can be operated in three regions. The first region, called forward biased, is when the cathode has a higher potential relative to the anode. Once this potential difference is greater than some threshold voltage (about 0.6 V for silicon diodes) the diode conducts with almost zero resistance and has a constant 0.6 V drop across it. The second region of operation is where the cathode has a lower potential relative to the anode. This region is called reversed biased and essentially no current can flow. Finally, if the potential difference from the cathode to the anode is negative and larger than some breakdown voltage, the diode will again conduct. Regular diodes are not used in the break down region, but Zener diodes are used for this purpose.
+
+![ [Diode characteristics](https://commons.wikimedia.org/wiki/File:Diode_current_wiki.png)](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/diode-characteristics.png){#fig:diode-char width="15cm"}
 
 ## Light emitting diode (LED)
 
@@ -76,17 +79,17 @@ $$S_{\lambda} = S_{940}~RSR(\lambda)$$
 
 Figure @fig:pd204 shows the RSR from the PD204 data sheet. You can see the maximum sensitivity is around 940 nm.
 
-![PD204 Relative Spectral Sensitivity](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/pd204-rss.png){#fig:pd204 width="15cm"}
+![PD204 Relative Spectral Sensitivity](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/pd204-rss.png){#fig:pd204 width="10cm"}
 
 # Current to Voltage Amplifier (Transimpedance Amplifier)
 
-In an ordinary inverting amplifier, the input voltage is applied to a resistor, and the amplifier generates an output voltage in response to the current that flows through the input resistor to the virtual ground at the negative op-amp input. A current-to-voltage amplifier (Figure @fig:photodetector) is an inverting amplifier with the input current $I_{in}$ supplied by the photodiode and applied to the inverting op-amp input. Since no current flows into the op-amp input, the output voltage must be $V_{out} = –I_{in}R_F$. The ideal (Golden Rules result) low-frequency gain of a current-to-voltage amplifier is
+In an ordinary inverting amplifier, the input voltage is applied to a resistor, and the amplifier generates an output voltage in response to the current that flows through the input resistor to the virtual ground at the negative op-amp input. A current-to-voltage amplifier (Figure @fig:photodetector) is an inverting amplifier with the input current $I_{in}$ supplied by the photodiode and applied to the inverting op-amp input. Since no current flows into the op-amp input, the output voltage must be $V_{out} = – I_{in}R_F$. The ideal (Golden Rules result) low-frequency gain of a current-to-voltage amplifier is
 
 $$G=\frac{V_{out}}{I_{in}}=-R_F$$
 
 This gain has the units of impedance i.e., Ohms, and it is often called a transimpedance gain. The current-tovoltage amplifier is also called a transimpedance amplifier. This type of amplifier is very common in research labs, and is used to amplify the current from photodiodes, photo multiplier tubes, ion detectors, etc.
 
-![Photodetector circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/photodetector.png){#fig:photodetector width="15cm"}
+![Photodetector circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/photodetector.png){#fig:photodetector width="10cm"}
 
 In our photometer circuit the current $I_{in}$ flows through the reverse-biased photodiode when it is illuminated (it flows out of the op-amp negative input node and the resulting $V_{out}$ is positive). The feedback capacitor $C_F$ enhances stability, i.e., it helps to avoid spontaneous oscillations of the op-amp by reducing the bandwidth of the amplifier (just like an active low-pass filter).
 
@@ -94,13 +97,13 @@ In our photometer circuit the current $I_{in}$ flows through the reverse-biased 
 
 The basic optical communication link is composed of two circuits (Figure @fig:photodetector and Figure @fig:ocl). The circuit in Figure @fig:ocl uses an AC voltage source to produce a light signal from the LED. The circuit in Figure @fig:photodetector is the photometer, composed of a photodiode connected to a transimpedance amplifier to convert the light into a measurable voltage.
 
-![Optical communication link circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/ocl.png){#fig:ocl width="15cm"}
+![Optical communication link circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/ocl.png){#fig:ocl width="9cm"}
 
 # LF356 Pin Out and Schematic
 
 All op-amp circuits start out by making the basic power connections. Op-amps are active components, which means they need external power to function, unlike passive components such as resistors and capacitors.
 
-![LF356 schematic and pin-out](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/lf356.png){#fig:lf356 width="15cm"}
+![LF356 schematic and pin-out](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/lf356.png){#fig:lf356 width="10cm"}
 
 # Useful Readings
 
@@ -140,7 +143,7 @@ Answer the following questions using Mathematica for the plots. You can use eith
 
 # Introducing Diodes
 
-![Simple diode circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/diode-cir.png){#fig:diode-cir width="10cm"}
+![Simple diode circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/diode-cir.png){#fig:diode-cir width="7cm"}
 
 ## Determine the I-V characteristics for a silicon diode {#sec:iv-silicon}
 
@@ -158,7 +161,7 @@ Answer the following questions using Mathematica for the plots. You can use eith
 
 # Test with Inverting Amplifier
 
-![Inverting amplifier circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/inv-amp-cir.png){#fig:inv-amp-cir width="15cm"}
+![Inverting amplifier circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/inv-amp-cir.png){#fig:inv-amp-cir width="12cm"}
 
 1.  We will first build the amplifier in a normal voltage amplifier configuration to test the setup and all the connections. Build the inverting amplifier circuit shown in Figure @fig:inv-amp-cir. Use a value for $R_F = R$ close to what you found in @sec:trans-pre, and a 10 pF capacitor $C_F$ in parallel with the feedback resistor to avoid spontaneous oscillations. Draw the schematic in your lab notebook and record the values of the components.
 

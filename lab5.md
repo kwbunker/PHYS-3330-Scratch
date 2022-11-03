@@ -1,3 +1,22 @@
+---
+title: "Lab5"
+subtitle: "Operational Amplifiers (OP-Amps) II"
+author: [Department of Physics | University of Colorado Boulder]
+date: '2022-10-31'
+caption-justification: centering
+toc: true
+toc-own-page: true
+titlepage: true
+header-left: "\\thetitle"
+header-center: "Operational Amplifiers (OP-Amps) II"
+header-right: "PHYS 3330"
+footer-left: "\\thedate"
+footer-center: "\\theauthor"
+footer-right: "Page \\thepage"
+listings-no-page-break: true
+code-block-font-size: \scriptsize
+---
+
 # Goals
 
 In this lab, you will characterize the gain and frequency dependence of inverting op-amp circuits. You will work with a few applications of negative feedback including a circuit to sum voltages.

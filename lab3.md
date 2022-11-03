@@ -1,6 +1,20 @@
 ---
-title: Lab 3
-geometry: "left=2cm,right=2cm,top=2cm,bottom=2cm"
+title: "Lab 3"
+subtitle: "Filters"
+author: [Department of Physics | University of Colorado Boulder]
+date: '2022-10-31'
+caption-justification: centering
+toc: true
+toc-own-page: true
+titlepage: true
+header-left: "\\thetitle"
+header-center: "Filters"
+header-right: "PHYS 3330"
+footer-left: "\\thedate"
+footer-center: "\\theauthor"
+footer-right: "Page \\thepage"
+listings-no-page-break: true
+code-block-font-size: \scriptsize
 ---
 
 # Goals
