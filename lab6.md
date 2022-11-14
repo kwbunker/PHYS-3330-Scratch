@@ -208,3 +208,14 @@ The dimensionless quantity $y(\lambda)$ is the photopic standard luminosity func
 ![The photopic standard luminosity function](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/lum.png){#fig:lum}
 
 # Appendix B: Light Output in Lumens for Various Light Sources {#appendix-b-light-output-in-lumens-for-various-light-sources .unnumbered}
+
+| Light Output (lm) | Tungsten Filament (W) | Halogen (W) | CFL (W) | LED (W) |
+| ----------------- | --------------------- | ----------- | ------- | ------- |
+| 200               | 25                    |             | 4       | 3       |
+| 450               | 40                    | 29          | 10      | 6       |
+| 800               | 60                    |             | 14      | 9       |
+| 1100              | 75                    | 53          | 19      | 12      |
+| 1600              | 100                   | 72          | 26      | 15      |
+| 2400              | 150                   |             | 40      | 26      |
+| 3100              | 200                   |             | 60      | 32      |
+
