@@ -205,7 +205,7 @@ $$F(lm) = 683 ~y(\lambda)~P(W)$$
 
 The dimensionless quantity $y(\lambda)$ is the photopic standard luminosity function and is shown in Figure @fig:lum and tabulated in the Datasheets section of Canvas. At $\lambda$ = 555 nm, where the eye is most sensitive, $y(\lambda)$ = 1. Therefore, two sources with the same luminous flux will have the same subjective brightness to a human observer (even though the outputted power may be different). This kind of color corrected unit is helpful if you want to design a control panel with lots of colored lights, and you want them all to have the same perceived brightness. We may also be interested in the luminous flux per unit area (similar to intensity). This is measured in units of lux, where 1 lux = 1 $lm/m^2$.
 
-![The photopic standard luminosity function](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/lum.png){#fig:lum}
+![The photopic standard luminosity function](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/lum.png){#fig:lum width="10cm"}
 
 # Appendix B: Light Output in Lumens for Various Light Sources {#appendix-b-light-output-in-lumens-for-various-light-sources .unnumbered}
 
@@ -219,3 +219,4 @@ The dimensionless quantity $y(\lambda)$ is the photopic standard luminosity func
 | 2400              | 150                   |             | 40      | 26      |
 | 3100              | 200                   |             | 60      | 32      |
 
+Table: Electrical power consumption of select light sources as a function of light output. {#tbl:1}
