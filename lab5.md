@@ -180,7 +180,7 @@ All op-amp circuits start out by making the basic power connections. Op-amps are
 
 ![LF356 schematic and pin-out](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab5fig/lf356.png){#fig:lf356 width="10cm"}
 
-![Good placement of op-amp and bypass capacitors on a protoboard. Note that short wires are used for all connections.](lab5fig/pb-example.png){#fig:pb width="10cm"}
+![Good placement of op-amp and bypass capacitors on a protoboard. Note that short wires are used for all connections.](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab5fig/pb-example.png){#fig:pb width="10cm"}
 
 # General Op-Amp Tips
 
