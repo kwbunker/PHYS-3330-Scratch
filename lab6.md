@@ -2,7 +2,7 @@
 title: "Lab 6"
 subtitle: "Optical Communication Link"
 author: [Department of Physics | University of Colorado Boulder]
-date: '2022-10-31'
+date: '2022-11-14'
 caption-justification: centering
 toc: true
 toc-own-page: true
@@ -131,7 +131,7 @@ Answer the following questions using Mathematica for the plots. You can use eith
 
 3.  What are the DC values of the voltages at the + and - inputs and at the output of the op-amp for zero light on the photodiode? Consider the ideal situation where the diode allows zero current when there is no light hitting it. (In reality, about 10 nA of "dark current" flows through the diode even with no light on it.)
 
-## Optical Communication Link
+## Optical communication link
 
 1.  To drive the transmitter, the function generator will be adjusted to produce a square wave with a high level of 8 V (unloaded) and a low level of 0 V. The high-level (8 V) should give a 20 mA forward current in the LED, and the low level (0 V) should give 0 mA. **Find the value of the series resistor Rs that gives the correct current.** The data sheet lists the LED forward voltage drop at 20 mA to be 1.9 V (instead of 0.6 V for silicon diodes). In addition, do not forget to model the function generator as an ideal voltage supply with a series output impedance of 50 $\Omega$, which is the true output impedance regardless of the "impedance setting" on the function generator. You will want to draw a circuit diagram with all of the components (modeling the output impedance as an extra resistor) and then use Kirchoff's rules to generate an equation that you can solve for $R_S$.
 

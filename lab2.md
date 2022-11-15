@@ -2,7 +2,7 @@
 title: "Lab 2"
 subtitle: "Modeling Measurement Systems Using Voltage Dividers"
 author: [Department of Physics | University of Colorado Boulder]
-date: '2022-10-31'
+date: '2022-11-14'
 caption-justification: centering
 toc: true
 toc-own-page: true
@@ -88,6 +88,10 @@ A non-ideal voltage source has an output impedance (resistance). First consider 
 5.  Using your symbolic equation for $V_{out}$, solve for $R_3$. (This will be super helpful for use in the lab).
 
 ## Lab activities
+
+1. Read through all of the lab steps and identify the step (or sub-step) that you think will be the most challenging.
+
+2. List at least one question you have about the lab activity.
 
 ![Ideal Voltage Divider](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab2fig/ideal-vd.png){#fig:ideal-vd height="7cm"}
 

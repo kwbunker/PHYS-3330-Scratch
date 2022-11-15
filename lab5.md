@@ -2,7 +2,7 @@
 title: "Lab5"
 subtitle: "Operational Amplifiers (OP-Amps) II"
 author: [Department of Physics | University of Colorado Boulder]
-date: '2022-10-31'
+date: '2022-11-14'
 caption-justification: centering
 toc: true
 toc-own-page: true

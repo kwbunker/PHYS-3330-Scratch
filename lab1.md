@@ -2,7 +2,7 @@
 title: "Lab 1"
 subtitle: "Electronic Measurements"
 author: [Department of Physics | University of Colorado Boulder]
-date: '2022-10-31'
+date: '2022-11-14'
 caption-justification: centering
 toc: true
 toc-own-page: true
@@ -126,7 +126,7 @@ A voltage source maintains a constant potential difference while the current out
 4.  Vary the value of the voltage and current. Describe the behavior of the voltage and current readings and the mode (CV/CC) of the power supply. What happens when you short the output to ground (have too small a load)? What is the maximum output of current and voltage your supply can produce?
 
 
-![Keysight EDU36311A DC power supply connections](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab1fig/EDU36311A.png){#fig:ps width="20cm"}
+![Keysight EDU36311A DC power supply connections](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab1fig/EDU36311A.png){#fig:ps width="15cm"}
 
 
 # Measuring Voltage with the Oscilloscope
