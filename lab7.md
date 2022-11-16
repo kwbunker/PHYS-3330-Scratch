@@ -75,7 +75,7 @@ The difference between $I_C$ and $I_E$ is almost never important since $h_{fe}$ 
 
 # Emitter Follower and Common Emitter Amplifier
 
-We will begin by constructing a common emitter amplifier, which operates on the principle of a current amplifier. However, a major fault of the common emitter amplifier is its high output impedance. This problem can be fixed by adding a second circuit, the emitter follower, as a second stage. The common-emitter amplifier and the emitter follower are the most common bipolar transistor circuits.
+We will begin by constructing a common emitter amplifier (CEA), which operates on the principle of a current amplifier. However, a major fault of the common emitter amplifier is its high output impedance. This problem can be fixed by adding a second circuit, the emitter follower (EF), as a second stage. The common-emitter amplifier and the emitter follower are the most common bipolar transistor circuits.
 
 First consider the emitter follower (Figure @fig:emitterf). The output (emitter) voltage is always 0.6 V (one diode drop) below the input (base) voltage. A small AC signal of amplitude $v_{in}$ at the input will therefore give a signal $v_{in}$ at the output, i.e. the output just "follows" the input. There is no gain (the gain is 1) but we will see later that this circuit is still useful because it has high input impedance and low output impedance.
 
@@ -151,9 +151,9 @@ $$r_e = 25~\Omega \left(\frac{1~mA}{I_C}\right)$$
 
 The presence of the intrinsic emitter resistance, $r_e$, modifies the above input and output impedances to:
 
-$$r_{in} = (R_e + r_e)~h_{fe}~~ \text{(common emitter amplifier \textit{and} emitter follower)}$$
+$$r_{in} = (R_e + r_e)~h_{fe}~~ \text{(CEA and EF)}$$
 
-$$r_{out} = \frac{R_B}{h_{fe}+1}+r_e~~ \text{(emitter follower)}$$
+$$r_{out} = \frac{R_B}{h_{fe}+1}+r_e~~ \text{(EF)}$$
 
 In addition, this modifies the gain of the common emitter amplifier to:
 
