@@ -94,7 +94,7 @@ See [Steck](https://atomoptics-nas.uoregon.edu/~dsteck/teaching/electronics/elec
 
 Each chip has a dot or notch to indicate the end where pins 1 and 14 are located. The pin numbers increase sequentially as you go counterclockwise around the chip viewed from above. In 74xx family logic chips, pin 7 is always grounded (0 V) and pin 14 is always connected to the +5 V supply. You connect these to the breadboard the same way as the op-amp (across the groove in the middle of the breadboard).
 
-![Some descriptive text](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab9fig/555timer.png){#fig:555timer}
+![Some descriptive text](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab9fig/logicchips.png){#fig:logicchips}
 
 # Useful Readings
 
@@ -232,3 +232,16 @@ Each of the above equalities is a theorem that can be proved. Let's do an exampl
 | 1    | 1    | 0         | 0         | 0                 |
 
 The last columns of the truth tables are identical. Thus, the first theorem is proven for two variables.
+
+## Example of simplification
+
+Boolean algebra can be used to simplify logical expressions and reduce the number of gates required in a circuit. In the figure below, we show two ways to implement the expression, $Y=A+\bar{A}BC$.
+
+**Direct implementation** using NOT, NOR, and NAND
+
+![Logic](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab9fig/logic.png){#fig:logic}
+
+**Simplified circuit**
+
+
+
