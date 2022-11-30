@@ -17,6 +17,8 @@ listings-no-page-break: true
 code-block-font-size: \scriptsize
 ---
 
+A PDF version of this page can be downloaded [here](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab1.pdf).
+
 # Goals
 
 In this lab, you will use basic test and measurement equipment that are useful for building and testing electronic circuits. In particular, you will make measurements of voltage using an oscilloscope and digital multimeter. You will also determine an accurate measurement technique for measuring small resistances.

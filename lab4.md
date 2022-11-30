@@ -17,6 +17,8 @@ listings-no-page-break: true
 code-block-font-size: \scriptsize
 ---
 
+A PDF version of this page can be downloaded [here](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab4.pdf).
+
 # Goals
 
 In this lab, you will characterize the gain and frequency dependence of op-amp circuits, one of the most useful components in electronics. You will also measure input and output impedances of these circuits. The op-amp is the most important building block of analog electronics. As op-amps are made out of transistors, most textbooks discuss transistors first, followed by op-amps. We choose the opposite order as we are not particularly interested in how op-amps are constructed but rather how to use them in circuits and the principles of op-amps operation are actually simpler than for transistors.

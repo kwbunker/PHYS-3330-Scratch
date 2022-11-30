@@ -17,6 +17,8 @@ listings-no-page-break: true
 code-block-font-size: \scriptsize
 ---
 
+A PDF version of this page can be downloaded [here](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab2.pdf).
+
 # Goals
 
 In this lab, you will gain experience working with the prototyping board, which will be the main platform for building circuits for the rest of the semester. You will also learn how to refine you model of a circuit to include the measurement probes. Finally, you will use apply your knowledge of voltage dividers to build a dimmer switch.

@@ -17,6 +17,8 @@ listings-no-page-break: true
 code-block-font-size: \scriptsize
 ---
 
+A PDF version of this page can be downloaded [here](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab3.pdf).
+
 # Goals
 
 In this lab, you will characterize the frequency dependence of three passive filters. You will gain more experience modeling both the response of the filters and how your measurement tools affect your measurements.

@@ -17,6 +17,8 @@ listings-no-page-break: true
 code-block-font-size: \scriptsize
 ---
 
+A PDF version of this page can be downloaded [here](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab9.pdf).
+
 # Goals
 
 In this lab, you will learn about the most basic elements of digital electronics, from which more complex circuits, including computers, can be constructed. Proficiency with new equipment and approaches:

@@ -17,6 +17,8 @@ listings-no-page-break: true
 code-block-font-size: \scriptsize
 ---
 
+A PDF version of this page can be downloaded [here](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6.pdf).
+
 # Goals
 
 In this lab, you will design and build a photometer (optical detector) based on a silicon photodiode and a current-to-voltage amplifier whose output is proportional to the intensity of incident light. First, you will use it to measure the room light intensity. Then you will set up and investigate an optical communication link in which the transmitter is a light emitting diode (LED) and the receiver is your photodiode detector.

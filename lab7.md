@@ -17,6 +17,8 @@ listings-no-page-break: true
 code-block-font-size: \scriptsize
 ---
 
+A PDF version of this page can be downloaded [here](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab7.pdf).
+
 # Goals
 
 In this lab, you will begin learning how transistors work by creating a dual-stage amplifier out of a common emitter amplifier plus an emitter follower and use this as an audio amplifier.
