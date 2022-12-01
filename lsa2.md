@@ -80,17 +80,20 @@ Watch the [screencast on changing the plot style.](https://www.youtube.com/watch
 
 **Default**
 
-`Plot[Sin[x], {x, 0, 10},
-	AxesLabel -> {"Time (s)", "Displacement (cm)"}]`
-
+```
+Plot[Sin[x], {x, 0, 10}, 
+	AxesLabel -> {"Time (s)", "Displacement (cm)"}]
+```
 **Modified**
 
-`Plot[Sin[x], {x, 0, 10},
+```
+Plot[Sin[x], {x, 0, 10},
 	Frame -> True,
 	Axes -> False,
 	LabelStyle -> {FontFamily -> "Arial", FontSize -> 13},
 	FrameLabel -> {"Time (s)", "Displacement (cm)"},
 	FrameStyle -> Thickness[0.005],
-	PlotStyle -> {Red, Thickness[0.01]}]`
+	PlotStyle -> {Red, Thickness[0.01]}]
+```
 
 1. Modify any one of the plots produced earlier in this activity and make it “classier”.

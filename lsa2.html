@@ -151,9 +151,16 @@ printed.</figcaption>
 </figure>
 </div>
 <p><strong>Default</strong></p>
-<p><code>Plot[Sin[x], {x, 0, 10},     AxesLabel -&gt; {"Time (s)", "Displacement (cm)"}]</code></p>
+<pre><code>Plot[Sin[x], {x, 0, 10}, 
+    AxesLabel -&gt; {&quot;Time (s)&quot;, &quot;Displacement (cm)&quot;}]</code></pre>
 <p><strong>Modified</strong></p>
-<p><code>Plot[Sin[x], {x, 0, 10},     Frame -&gt; True,     Axes -&gt; False,     LabelStyle -&gt; {FontFamily -&gt; "Arial", FontSize -&gt; 13},     FrameLabel -&gt; {"Time (s)", "Displacement (cm)"},     FrameStyle -&gt; Thickness[0.005],     PlotStyle -&gt; {Red, Thickness[0.01]}]</code></p>
+<pre><code>Plot[Sin[x], {x, 0, 10},
+    Frame -&gt; True,
+    Axes -&gt; False,
+    LabelStyle -&gt; {FontFamily -&gt; &quot;Arial&quot;, FontSize -&gt; 13},
+    FrameLabel -&gt; {&quot;Time (s)&quot;, &quot;Displacement (cm)&quot;},
+    FrameStyle -&gt; Thickness[0.005],
+    PlotStyle -&gt; {Red, Thickness[0.01]}]</code></pre>
 <ol type="1">
 <li>Modify any one of the plots produced earlier in this activity and
 make it “classier”.</li>
