@@ -187,6 +187,8 @@ We imagine a logical variable, *A*, that takes on the values 0 or 1. If *A = 0* 
 | *A* + *A* = *A* | *A* · *A* = *A* | *Ā* = *A*     |
 | *A* + *Ā* =1    | *A* · *Ā* = 0   |               |
 
+Table: Caption. {#tbl:1}
+
 ## Equality
 
 Two Boolean expressions are equal if and only if their truth tables are identical.
@@ -226,12 +228,16 @@ Each of the above equalities is a theorem that can be proved. Let's do an exampl
 | 1    | 0    | 0    | 1               |
 | 1    | 1    | 1    | 0               |
 
+Table: Caption. {#tbl:2}
+
 | $A$  | $B$  | $\bar{A}$ | $\bar{B}$ | $\bar{A}+\bar{B}$ |
 | ---- | ---- | --------- | --------- | ----------------- |
 | 0    | 0    | 1         | 1         | 1                 |
 | 0    | 1    | 1         | 0         | 1                 |
 | 1    | 0    | 0         | 1         | 1                 |
 | 1    | 1    | 0         | 0         | 0                 |
+
+Table: Caption. {#tbl:3}
 
 The last columns of the truth tables are identical. Thus, the first theorem is proven for two variables.
 
