@@ -2,7 +2,7 @@
 title: "Lab 9"
 subtitle: "Digital Electronics: Logic and clocks"
 author: [Department of Physics | University of Colorado Boulder]
-date: '2022-11-14'
+date: '2022-12-01'
 caption-justification: centering
 toc: true
 toc-own-page: true
