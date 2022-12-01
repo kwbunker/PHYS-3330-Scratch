@@ -17,8 +17,6 @@ listings-no-page-break: true
 code-block-font-size: \scriptsize
 ---
 
-A PDF version of this page can be downloaded [here](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lsa1.pdf).
-
 # Goals
 
 The big picture learning goals for the Mathematica Lab Skill activities are that you would be able to successfully use Mathematica throughout this course for presenting data, data analysis, computational modeling, and documenting your work in a well-organized and efficient way. By working through these lessons together, using the same program (Mathematica), we will have a shared experience with a powerful computational tool. In addition to the instructor, your classmates become a valuable resource for problem solving when you are using Mathematica, similar to working in a research lab. Also, the Mathematica screencasts are always available on YouTube for reference when you are completing similar tasks in the lab.
@@ -52,7 +50,9 @@ Other possible options were not as desirable for a few reasons. CU does not have
 
 # Using Mathematica as a Calculator
 
-Watch the [Introduction to Mathematica screencast](http://www.youtube.com/watch?v=CPAvRsQXK8c). Start Mathematica and create a new notebook. **Keep all of your work in this Lab Skill Activity in this Mathematica notebook. You will turn in this Mathematica Notebook as evidence of completing the activity.**
+Watch the [Introduction to Mathematica screencast.](https://youtu.be/CPAvRsQXK8c) 
+
+Start Mathematica and create a new notebook. **Keep all of your work in this Lab Skill Activity in this Mathematica notebook. You will turn in this Mathematica Notebook as evidence of completing the activity.**
 
 1. Evaluate the following math expressions in Mathematica:
    1. $3\pi^2+4.1$
@@ -76,7 +76,7 @@ You will often find it useful to plot functions. For example, in the process of 
 need to visualize a theoretical prediction. Another common example is plotting fitted curve to the data.
 This screencast takes you through the basics of plotting functions using the `Plot` function.
 
-Watch a [screencast on plotting functions with Mathematica](www.youtube.com/watch?v=yEc9L8gVG94).
+Watch a [screencast on plotting functions with Mathematica.](http://www.youtube.com/watch?v=yEc9L8gVG94)
 
 1. Plot $sin^2\theta$ for $\theta$ between $0$ and $4\pi$.
 2. Plot $sin~2t$ and $cos~3t$ together on the same plot for $t$ between $0$ and $10$.
@@ -101,14 +101,16 @@ Table: Wavelength dependence of the index of refraction of BK7 glass. BK7 glass 
 
 Regardless of how you input the data, it is always represented as a Mathematica list. Lists are like arrays. The following data from Table 1 has been directly entered as a list. The downside is it requires many curly brackets, and we lose the row-column format of the original data which may make you more prone to mistakes as you enter the data.
 
-`data = {{0.3,1.553},{0.4,1.531},{0.5,1.521},{0.6,1.516},{0.7,1.513},{0.8,1.511}}`
+`data = {{0.3,1.553},{0.4,1.531},{0.5,1.521},{0.6,1.516},`
+
+`{0.7,1.513},{0.8,1.511}}`
 
 ***Option 2: Entering data as a nicely formatted table***
 
 In Mathematica you can directly enter data in the form of a table. Keyboard shortcuts make it very easy to
 create additional rows and columns. `<ctrl+comma>` or `<cmd+comma>` creates a new column. `<ctrl+enter>` or `<cmd+enter>` creates a new row.
 
-Watch the [Screencast on entering data as a table and plotting it](http://www.youtube.com/watch?v=9xJHjPjF8io).
+Watch the [Screencast on entering data as a table and plotting it.](http://www.youtube.com/watch?v=9xJHjPjF8io)
 
 There is an [optional screencast](http://www.wolfram.com/broadcast/video.php?sx=grid&c=89&v=581) produced by Wolfram which is informative. 
 
@@ -116,7 +118,7 @@ There is an [optional screencast](http://www.wolfram.com/broadcast/video.php?sx=
 
 Plotting data is another skill that is essential in the lab. By the end of this section you should be able to use the `ListPlot` function for plotting data. When using `ListPlot` you need to be sure the data in the correct form. The most common form data is a list of pairs of numbers. For example, `{{x1,y1},{x2,y2},…}`.
 
-Watch the screencast on [plotting data in Mathematica](http://youtu.be/PewDMQUj2i8).
+Watch the screencast on [plotting data in Mathematica.](http://youtu.be/PewDMQUj2i8)
 
 1. Plot the index of refraction data that you already entered into Mathematica.
 
