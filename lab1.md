@@ -17,7 +17,11 @@ listings-no-page-break: true
 code-block-font-size: \scriptsize
 ---
 
+<!---
+
 A PDF version of this page can be downloaded [here](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab1.pdf).
+
+-->
 
 # Goals
 
