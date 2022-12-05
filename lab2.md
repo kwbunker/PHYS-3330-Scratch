@@ -25,7 +25,7 @@ A PDF version of this page can be downloaded [here](https://raw.githubuserconten
 
 # Goals
 
-In this lab, you will gain experience working with the prototyping board, which will be the main platform for building circuits for the rest of the semester. You will also learn how to refine you model of a circuit to include the measurement probes. Finally, you will use apply your knowledge of voltage dividers to build a dimmer switch.
+In this lab, you will gain experience working with the prototyping board, which will be the main platform for building circuits for the rest of the semester. You will also learn how to refine your model of a circuit to include the measurement probes. Finally, you will apply your knowledge of voltage dividers to build a dimmer switch.
 
 Proficiency with new equipment:
 
@@ -77,7 +77,7 @@ An ideal voltage source (no internal resistance) drives current around the loop 
 
 2.  What is $V_{out}$ if $V = 10~V$, $R_{1} = 2~k\Omega$, and $R_{2} = 1~k\Omega$?
 
-3.  Calculate the voltage $V_{out}$ for the modified circuit shown in Figure @fig:modified-vd with $R_{3} = 10~k\Omega$ and the other components unchanged.
+3.  Calculate the voltage, $V_{out}$, for the modified circuit shown in Figure @fig:modified-vd with $R_{3} = 10~k\Omega$ and the other components unchanged.
 
 ## Resistive voltage dividers (non-ideal power supply)
 
@@ -85,11 +85,11 @@ A non-ideal voltage source has an output impedance (resistance). First consider 
 
 1.  Draw a modified circuit diagram of Figure @fig:ideal-vd to model the non-ideal voltage source as an ideal source with a series resistor.
 
-2.  Derive a formula for the current, I, and the output voltage, V~out~ of the circuit you just drew.
+2.  Derive a formula for the current, $I$, and the output voltage, $V_{out}$, of the circuit you just drew.
 
 3.  What is $V_{out}$  if $V = 10~V$, $R_1 = 2~ k\Omega$, and $R_2 = 1 ~k\Omega$ ?
 
-4.  An additional load is connected between$V_{out}$ and ground in the form of the resistor $R_3$ as shown in Figure @fig:modified-vd . Calculate the voltage $V_{out}$ for this circuit (with the non­‐ideal power supply) and with $R_3 = 10 ~k\Omega$.
+4.  An additional load is connected between $V_{out}$ and ground in the form of the resistor $R_3$ as shown in Figure @fig:modified-vd . Calculate the voltage $V_{out}$ for this circuit (with the non­‐ideal power supply) and with $R_3 = 10 ~k\Omega$.
 
 5.  Using your symbolic equation for $V_{out}$, solve for $R_3$. (This will be super helpful for use in the lab).
 
@@ -113,7 +113,7 @@ Before breadboards (aka prototyping or proto boards), creating circuits required
 
 2. On the front panel, you will find:
 
-   -   BNC cable jacksthat carry electric signals between your circuit on the board and the function generator and oscilloscope
+   -   BNC cable jacks that carry electric signals between your circuit on the board and the function generator and oscilloscope
    -   Colored banana jacks to bring in DC power for transistors or chips from an external power supply
    -   A precision 10 k$\Omega$ ten‑turn potentiometer
    -   Several switches
@@ -150,13 +150,13 @@ Components (resistors, capacitors, transistors, etc.) are available from the com
 
 ## Fixed-value voltage divider - 1k$\boldsymbol{\Omega}$
 
-1.  Build a voltage divider similar to the one shown in Fig. 1(a) using resistors of around 1 k$\Omega$. Draw a diagram of the circuit in your lab notebook. Make sure to label the resistors and record all measured component values and voltages.
+1.  Build a voltage divider similar to the one shown in Figure @fig:ideal-vd using resistors of around 1 k$\Omega$. Draw a diagram of the circuit in your lab notebook. Make sure to label the resistors and record all measured component values and voltages.
 
 2.  Measure each resistor with your DMM before inserting it into your circuit and record the value. Why should you measure component values before placing them in the circuit?
 
 3.  Predict the output voltage you should measure based on your input voltage and resistance measurements. Include your calculations and numerical predictions in your lab notebook.
 
-4.  Now, apply a DC voltage to the input and measure the output voltage of your divider, first using first your DMM and second using your oscilloscope with the minigrabbers. Record your measurements. *Do not have the DMM and the oscilloscope connected at the same time because each may perturb the measurement differently.*
+4.  Now, apply a DC voltage to the input and measure the output voltage of your divider, first using your DMM and second using your oscilloscope with the minigrabbers. Record your measurements. *Do not have the DMM and the oscilloscope connected at the same time because each may perturb the measurement differently.*
 
 5.  Compare the voltages you predicted to the voltages you measured. Does your model of the voltage divider agree with each of your measurements? Explicitly record what criteria you used to determine whether or not the model and measurements agreed.
 
@@ -172,7 +172,7 @@ Components (resistors, capacitors, transistors, etc.) are available from the com
 
 4.  There is an easy way to determine the specified input impedance of the scope. Where can you find that information? Does the measured input resistance agree with the instrument specs? Explicitly record what criteria you used to determine whether or not the resistances agree.
 
-# Build a Controllable Voltage Source (Dimmer Switch
+# Build a Controllable Voltage Source (Dimmer Switch)
 
 You will now use your skills with building and testing voltage dividers to build a controllable voltage source using a potentiometer.
 
@@ -180,7 +180,7 @@ You will now use your skills with building and testing voltage dividers to build
 
 1.  Set the dial to some point between 0 and 1000, but not 500. Since you have a 10-turn, 10 k$\Omega$ pot, the resistance between the wiper and one of the terminals should be equal to the dial value multiplied by 10 $\Omega$. The resistance between the wiper and the remaining terminal should be the previous resistance subtracted from 10 k$\Omega$.
 
-2.  Use the DMM to measure the resistance between all possible pairs of connections. Determine which terminal corresponds to the wiper, and which terminals correspond to the and ends of the dial. Test with a DMM at a few different dial settings to get the hang of it.
+2.  Use the DMM to measure the resistance between all possible pairs of connections. Determine which terminal corresponds to the wiper, and which terminals correspond to the ends of the dial. Test with a DMM at a few different dial settings to get the hang of it.
 
 3.  Draw a diagram of the pot including a model of the internal components and external connections using the resistance observations.
 
@@ -208,7 +208,7 @@ Write a two-paragraph summary in your lab notebook of what you learned and any i
 
 1.  The potentiometer on the circuit board panel has three connections. Two of the connections are at opposite end of a resistor. The third connection is connected to a sliding \"wiper.\"
 
-2.  Your potentiometer is actually a very precise device! You can control the intermediate resistances at the level of 0.1% with a little care. To understand how, examine the dial on the potentiometer. It should have a window with a number in it, and a dial marked with a scale that goes from 00 to 99. The digit in the window increments with each full turn of the dial, so it represents the most significant digit of the setting number: if it says in the window and the dial reads 55, then the setting is 355. For a 10-turn potentiometer such as yours, the dial should be able to run from 000 to 1000 by turning the knob ten full turns.
+2.  Your potentiometer is actually a very precise device! You can control the intermediate resistances at the level of 0.1% with a little care. To understand how, examine the dial on the potentiometer. It should have a window with a number in it, and a dial marked with a scale that goes from 00 to 99. The digit in the window increments with each full turn of the dial, so it represents the most significant digit of the setting number: if it says 3 in the window and the dial reads 55, then the setting is 355. For a 10-turn potentiometer such as yours, the dial should be able to run from 000 to 1000 by turning the knob ten full turns.
 
 3.  First, check if your pot is already calibrated! Turn the knob counterclockwise until it stops. If the dial reads 000 in this position, your pot is calibrated.
 

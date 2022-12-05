@@ -229,10 +229,11 @@ class="header-section-number">5.2</span> Investigate operating
 modes</h2>
 <p>A voltage source maintains a constant potential difference while the
 current output varies dependent on the load resistance (this is the
-Constant Voltage (CV) mode). A current source maintains a constant
-current while the voltage output varies dependent on the load resistance
-(this is the Constant Current (CC) mode). The power supply will indicate
-the operational mode of each channel in the upper right corner of the
+Constant Voltage (CV) mode indicated at the top right corner of each
+channel). A current source maintains a constant current while the
+voltage output varies dependent on the load resistance (this is the
+Constant Current (CC) mode). The power supply will indicate the
+operational mode of each channel in the upper right corner of the
 respective channel window (in addition to CV and CC modes, the other
 mode is OFF).</p>
 <ol type="1">
@@ -240,8 +241,8 @@ mode is OFF).</p>
 both power rails (see definitions).</p></li>
 <li><p>Try adjusting the value of the voltage and current. Why is the
 current output always zero?</p></li>
-<li><p>Now short the (+) rail to ground. You can use a banana cable from
-the rack to do this.</p></li>
+<li><p>Now short the (+) rail of Channel 2 to ground. You can use a
+banana cable from the rack to do this.</p></li>
 <li><p>Vary the value of the voltage and current. Describe the behavior
 of the voltage and current readings and the mode (CV/CC) of the power
 supply. What happens when you short the output to ground (have too small
@@ -321,22 +322,21 @@ class="header-section-number">6.2</span> Triggering an AC waveform on
 the scope</h2>
 <p>Most scopes produce about 0-5 V square wave on the "PROBE COMP" pins
 to use for testing. We will use this to get familiar with triggering the
-scope.</p>
+scope. The trigger level controls the voltage at which the trace starts.
+Stability is lost when the trigger level lies outside range of the
+displayed voltage.</p>
 <ol type="1">
 <li><p>Connect the Probe Comp output to the scope using mini grabbers
 (see Figure <a href="#fig:grabber">3</a>).</p></li>
 <li><p>Display the waveform on the scope. You will need to trigger the
 scope off of the waveform. Confirm with your instructor that you have
-the scope triggered correctly before continuing. Describe the setup and
-outcomes in your lab notebook.</p></li>
+the scope triggered correctly before continuing. Change TRIGGER MODE to
+NORMAL. Note that the trace now "freezes" when the trigger level is
+misadjusted. You can see whether or not the scope is actually being
+triggered by looking for the small writing TRIGD or TRIG? at the top of
+the display. <em>See Appendix for the trigger menu.</em> Describe the
+setup and outcomes in your lab notebook.</p></li>
 </ol>
-<p>The trigger level controls the voltage at which the trace starts.
-Stability is lost when the trigger level lies outside range of the
-displayed voltage. Change TRIGGER MODE to NORMAL. Note that the trace
-now "freezes" when the trigger level is misadjusted. You can see whether
-or not the scope is actually being triggered by looking for the small
-writing TRIGD or TRIG? at the top of the display. <em>See Appendix for
-the trigger menu.</em></p>
 <p>What is the frequency of the waveform? You can measure the period and
 then calculate the frequency using that measurement. Include your
 measurements, procedure, and calculations in your lab notebook.</p>
@@ -346,7 +346,7 @@ class="header-section-number">6.3</span> Creating an AC waveform using a
 function generator and measuring it on a scope</h2>
 <p>The Keysight EDU33212A function generator can produce sine, square,
 triangle, pulse, and ramp waveforms over the frequencies from 0.000001
-Hz to 20 MHz. The output amplitude can be varied between 1 mV and 10 V
+Hz to 20 MHz. The output amplitude can be varied between 1 mV and 20 V
 peak-to-peak with an output impedance of 50 <span
 class="math inline">\(\Omega\)</span>.</p>
 <p><strong><em>There is one main precaution to keep in mind: Do not
@@ -404,9 +404,9 @@ just replace it. Does the measured current from the DMM agree with the
 value indicated on the power supply? Using the current and voltage
 readings, what is the impedance of the ammeter? <em>HINT: The DMM leads
 must be in different places to measure current vs. voltage. Also, it is
-recommended to use the high current input until you are certain that the
-current is low enough to be read by the low current input. This avoids
-blowing the fuse.</em></p></li>
+recommended to use the high current input, if your DMM has one, until
+you are certain that the current is low enough to be read by the low
+current input. This avoids blowing the fuse.</em></p></li>
 <li><p>The DMM also has an AC voltage setting. Over what frequency range
 is the reading accurate to 2%? You will need to use the function
 generator to produce an AC waveform. Note: the DMM displays the RMS
@@ -528,7 +528,7 @@ changes color to show which channel is being triggered)</p>
 </ol>
 <p><strong>To select the AQUIRE mode:</strong></p>
 <ol type="1">
-<li><p>Run/Stop: sets the scope to continuously quire or freeze after
+<li><p>Run/Stop: sets the scope to continuously aquire or freeze after
 last trigger</p></li>
 <li><p>Single sequence: draws once after it triggers</p></li>
 <li><p>Autoset: scope tries to choose overall best scope settings
@@ -555,7 +555,7 @@ color as the channel they are measuring)</p></li>
 <li><p>Big top knob moves the cursors</p></li>
 <li><p>SELECT button changes which cursor to move.</p></li>
 <li><p>Position relative to ground (trigger zero time) is displayed on
-the screen with the "@" symbol.</p></li>
+the screen with the T symbol.</p></li>
 <li><p>Relative distance between cursors is displayed on the screen with
 the <span class="math inline">\(\Delta\)</span> symbol.</p></li>
 </ol>
@@ -579,7 +579,8 @@ Setup Menu</figcaption>
 </figure>
 </div>
 <ol start="2" type="1">
-<li>Begin specifying the output termination by pressing Output.</li>
+<li>Begin specifying the output termination by pressing Output
+Load.</li>
 </ol>
 <div id="fig:output" class="fignos">
 <figure>

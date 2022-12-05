@@ -89,7 +89,7 @@ $$\left| T(f) \right| = \frac{2\pi fRC}{\sqrt{1 + (2\pi fRC)^{2}}} ~\mbox{(high-
 
 For both filters: $f_{C} = 1/{2\pi RC}\ $, where $f_{C}$ is the frequency at which the power drops by 3 dB (which means it is half of the maximum). In this lab, we are finding how efficiently signals of different frequencies are passed. This is called the frequency domain. Later, we will look at the time domain, where we see how the output changes as a function of time. In that context, low-pass and high-pass filters are called integrators and differentiators.
 
-## Parallel LRC band-pass filters
+## Parallel LCR band-pass filters
 
 The LCR circuit is described in Fischer-Cripps 3.12, H&H 1.22, and Steck 2.6 (note that the Steck example is for a *serial* LCR circuit so the concepts are the same but the details are different). As this is another generalized voltage divider,
 
@@ -141,7 +141,7 @@ Answer the following questions using Mathematica. Save the complete notebook as 
 
 2.  Create two Bode plots (one for each filter) of the frequency response of the low-pass and high-pass filters in Figures @fig:low-pass-1 and @fig:high-pass-1. A Bode plot is a log-log plot of the gain ($V_{out}/V_{in}$) versus frequency, similar to what is on pages 61 & 62 of Steck (although the Steck plots have the x-axis in units of $2\pi RC$ and you should use units of Hz). Make sure to include a large enough range in frequency to see both the pass and attenuation bands. Make sure to label your axes! Details about making plots nice are included in Lab Skills Activity 2.
 
-3.  During the lab section, you will enter your measurements into your Mathematica notebook and plot them with your model predictions. To prepare for this, create a list of "fake data" and plot it on your Bode plots. This will allow you to compare your model and measurements in real time avoiding lost time taking lots of data when something is wrong with your circuit. The point of this part is just to have you create working code to enter a list of data and plot it along with the function. The numerical values of the fake date are unimportant. There is a helpful guide on Canvas about plotting data and theory together in Mathematica under.
+3.  During the lab section, you will enter your measurements into your Mathematica notebook and plot them with your model predictions. To prepare for this, create a list of "fake data" and plot it on your Bode plots. This will allow you to compare your model and measurements in real time avoiding lost time taking lots of data when something is wrong with your circuit. The point of this part is just to have you create working code to enter a list of data and plot it along with the function. The numerical values of the fake date are unimportant. There is a helpful guide on Canvas about plotting data and theory together in Mathematica in the Mathematica Resources page.
 
 ## Band-pass filters
 
@@ -221,7 +221,7 @@ Plot your mathematical models of all three filter circuits (three independent pl
 
 4.  Compare the measured value of $Q$ with your predicted value. Do they agree?
 
-5.  It is common in all electrical circuits to find $Q$ values that are somewhat lower than values you predict. This is due to additional losses in the circuit. In this case the losses are primarily in the inductor. Measure the inductor's "equivalent series resistance" (ESR) using a DMM. You can refine your model by including this resistance in your circuit. Draw a schematic that includes this resistor. What is the predicted $Q$ when you include this resistance in your model? *See Appendix A. Does this result in better agreement with your measured $Q$?*
+5.  It is common in all electrical circuits to find $Q$ values that are somewhat lower than values you predict. This is due to additional losses in the circuit. In this case the losses are primarily in the inductor. Measure the inductor's "equivalent series resistance" (ESR) using a DMM. You can refine your model by including this resistance in your circuit. Draw a schematic that includes this resistor. What is the predicted $Q$ when you include this resistance in your model? *See Appendix A.* Does this result in better agreement with your measured $Q$?
 
 6.  Measure the gain ($|V_{out}/V_{in}|$) as function of frequency. Use your model prediction to decide what values of frequency to take data. Plot your measurements on the same graph as your model. Does your data match your model prediction? Note, your transfer function did not include the refined value of $Q$.
 

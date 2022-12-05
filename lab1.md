@@ -121,13 +121,13 @@ Your DC power supply will provide all of your circuits with the required power. 
 
 ## Investigate operating modes
 
-A voltage source maintains a constant potential difference while the current output varies dependent on the load resistance (this is the Constant Voltage (CV) mode). A current source maintains a constant current while the voltage output varies dependent on the load resistance (this is the Constant Current (CC) mode). The power supply will indicate the operational mode of each channel in the upper right corner of the respective channel window (in addition to CV and CC modes, the other mode is OFF).
+A voltage source maintains a constant potential difference while the current output varies dependent on the load resistance (this is the Constant Voltage (CV) mode indicated at the top right corner of each channel). A current source maintains a constant current while the voltage output varies dependent on the load resistance (this is the Constant Current (CC) mode). The power supply will indicate the operational mode of each channel in the upper right corner of the respective channel window (in addition to CV and CC modes, the other mode is OFF).
 
 1.  With no load attached, record the output voltage and current for both power rails (see definitions).
 
 2.  Try adjusting the value of the voltage and current. Why is the current output always zero?
 
-3.  Now short the (+) rail to ground. You can use a banana cable from the rack to do this.
+3.  Now short the (+) rail of Channel 2 to ground. You can use a banana cable from the rack to do this.
 
 4.  Vary the value of the voltage and current. Describe the behavior of the voltage and current readings and the mode (CV/CC) of the power supply. What happens when you short the output to ground (have too small a load)? What is the maximum output of current and voltage your supply can produce?
 
@@ -167,19 +167,17 @@ The Tektronix TBS 2000 Series has four independent channels so that four separat
 
 ## Triggering an AC waveform on the scope
 
-Most scopes produce about 0-5 V square wave on the \"PROBE COMP\" pins to use for testing. We will use this to get familiar with triggering the scope.
+Most scopes produce about 0-5 V square wave on the \"PROBE COMP\" pins to use for testing. We will use this to get familiar with triggering the scope. The trigger level controls the voltage at which the trace starts. Stability is lost when the trigger level lies outside range of the displayed voltage.
 
 1.  Connect the Probe Comp output to the scope using mini grabbers (see Figure @fig:grabber).
 
-2.  Display the waveform on the scope. You will need to trigger the scope off of the waveform. Confirm with your instructor that you have the scope triggered correctly before continuing. Describe the setup and outcomes in your lab notebook.
-
-The trigger level controls the voltage at which the trace starts. Stability is lost when the trigger level lies outside range of the displayed voltage. Change TRIGGER MODE to NORMAL. Note that the trace now \"freezes\" when the trigger level is misadjusted. You can see whether or not the scope is actually being triggered by looking for the small writing TRIGD or TRIG? at the top of the display. *See Appendix for the trigger menu.*
+2.  Display the waveform on the scope. You will need to trigger the scope off of the waveform. Confirm with your instructor that you have the scope triggered correctly before continuing. Change TRIGGER MODE to NORMAL. Note that the trace now \"freezes\" when the trigger level is misadjusted. You can see whether or not the scope is actually being triggered by looking for the small writing TRIGD or TRIG? at the top of the display. *See Appendix for the trigger menu.* Describe the setup and outcomes in your lab notebook.
 
 What is the frequency of the waveform? You can measure the period and then calculate the frequency using that measurement. Include your measurements, procedure, and calculations in your lab notebook.
 
 ## Creating an AC waveform using a function generator and measuring it on a scope
 
-The Keysight EDU33212A function generator can produce sine, square, triangle, pulse, and ramp waveforms over the frequencies from 0.000001 Hz to 20 MHz. The output amplitude can be varied between 1 mV and 10 V peak-to-peak with an output impedance of 50 $\Omega$.
+The Keysight EDU33212A function generator can produce sine, square, triangle, pulse, and ramp waveforms over the frequencies from 0.000001 Hz to 20 MHz. The output amplitude can be varied between 1 mV and 20 V peak-to-peak with an output impedance of 50 $\Omega$.
 
 ***There is one main precaution to keep in mind: Do not connect any output of the EDU33212A directly to dc power or to the output of any other instrument or circuit. Doing so will burn out the output amplifier!***
 
@@ -203,7 +201,7 @@ To measure various quantities with the DMM, you must set the dial to the correct
 
 2.  Connect the leads and set the dial to measure voltage. Measure the voltage of both sides of the DC power supply again. Does the measured value from the DMM agree with the value indicated on the power supply?
 
-3.  Connect the leads and set the dial to measure current. Measure the current produced by the power supply. **Make sure the power supply current is limited to a value below the fuse of the DMM.** How do you experimentally set the current limit? If you blow the fuse, just replace it. Does the measured current from the DMM agree with the value indicated on the power supply? Using the current and voltage readings, what is the impedance of the ammeter? *HINT: The DMM leads must be in different places to measure current vs. voltage. Also, it is recommended to use the high current input until you are certain that the current is low enough to be read by the low current input. This avoids blowing the fuse.*
+3.  Connect the leads and set the dial to measure current. Measure the current produced by the power supply. **Make sure the power supply current is limited to a value below the fuse of the DMM.** How do you experimentally set the current limit? If you blow the fuse, just replace it. Does the measured current from the DMM agree with the value indicated on the power supply? Using the current and voltage readings, what is the impedance of the ammeter? *HINT: The DMM leads must be in different places to measure current vs. voltage. Also, it is recommended to use the high current input, if your DMM has one, until you are certain that the current is low enough to be read by the low current input. This avoids blowing the fuse.*
 
 4.  The DMM also has an AC voltage setting. Over what frequency range is the reading accurate to 2%? You will need to use the function generator to produce an AC waveform. Note: the DMM displays the RMS amplitude of the waveform. See Definitions at the beginning of the guide for an explanation of RMS.
 
@@ -289,7 +287,7 @@ Ch. 1 (or 2,3,4) button Vertical Off button (above Vertical Scale knob)
 
 **To select the AQUIRE mode:**
 
-1.  Run/Stop: sets the scope to continuously quire or freeze after last trigger
+1.  Run/Stop: sets the scope to continuously aquire or freeze after last trigger
 
 2.  Single sequence: draws once after it triggers
 
@@ -309,7 +307,7 @@ You can select various measurements and which channel to measure. *Be very caref
 
 4.  SELECT button changes which cursor to move.
 
-5.  Position relative to ground (trigger zero time) is displayed on the screen with the \"@\" symbol.
+5.  Position relative to ground (trigger zero time) is displayed on the screen with the T symbol.
 
 6.  Relative distance between cursors is displayed on the screen with the $\Delta$ symbol.
 
@@ -319,7 +317,7 @@ You can select various measurements and which channel to measure. *Be very caref
 
 ![Keysight EDU33212A Setup Menu](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab1fig/EDU33212A-term1.png){#fig:setup width="10cm"}
 
-2.  Begin specifying the output termination by pressing Output.
+2.  Begin specifying the output termination by pressing Output Load.
 
 ![Keysight EDU33212A Output Selection](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab1fig/EDU33212A-term2.png){#fig:output width="10cm"}
 

@@ -134,7 +134,7 @@ We can now derive an example of a very important general rule connecting the gai
 
 $$A_0 f_0=G_0 f_B = f_T$$
 
-In words, this very important formula says that the gain-bandwidth product $G_0f_B$ equals the unity gain frequency $f_T$. Thus if an op-amp has a unity gain frequency $f_T$ of 1 MHz, it can be used to make a non-inverting amplifier with a gain of one and a bandwidth of 1 MHz, or with a gain of 10 and a bandwidth of 100 kHz, *etc.* We will consider what this means for the transfer function as a function of frequency on a Bode plot.
+In words, this very important formula says that the gain-bandwidth product, $G_0f_B$, equals the unity gain frequency, $f_T$. Thus if an op-amp has a unity gain frequency, $f_T$, of 1 MHz, it can be used to make a non-inverting amplifier with a gain of one and a bandwidth of 1 MHz, or with a gain of 10 and a bandwidth of 100 kHz, *etc.* We will consider what this means for the transfer function as a function of frequency on a Bode plot.
 
 # Useful Readings
 
@@ -148,7 +148,7 @@ In words, this very important formula says that the gain-bandwidth product $G_0f
 
 Answer the following questions using Mathematica for the plots. You can use either Mathematica for the rest of the questions as well or do them by hand. **Make sure to have the Mathematica notebook for your lab section as well.**
 
-## Properties of and op-amp
+## Properties of an op-amp
 
 The first step in using a new component is to look up its basic characteristics. Find the following specs using the data sheet for the op-amp you will use in the lab for the rest of the semester. Data for the LF356 op-amp (same as LF156) are given at the National Semiconductor web site and found in Canvas in the Datasheets section.
 
@@ -206,7 +206,7 @@ All op-amp circuits start out by making the basic power connections. Op-amps are
 
     3.  Adhere to a color code for wires. For example:
 
-        -    <span style="color: green;">0V (ground) Green</span>
+        -    <span style="color: black;">0V (ground) Black</span>
 
         -    <span style="color: red;">+15V Red</span>
 
@@ -221,7 +221,7 @@ All op-amp circuits start out by making the basic power connections. Op-amps are
 
 ## Testing the op-amp
 
-1.  You can save yourself some frustration by testing your op-amp chips to make sure they are not burned out. Connect the op-amp as a grounded-input ***voltage follower*** with the (positive) input grounded (see Figure @fig:voltage-follower-gnd). What is the predicted voltage on pins 2, 3, 4, 6 and 7 using the Golden Rule model? Measure and record the measured voltages on these pins. If your predictions do not match your measurements check your connections to the chip to find the problem. Make sure your predictions match your measurements before going on.
+1.  You can save yourself some frustration by testing your op-amp chips to make sure they are not burned out. Connect the op-amp as a grounded-input ***voltage follower*** with the (positive) input grounded (see Figure @fig:voltage-follower-gnd). What is the predicted voltage on pins 2, 3, 4, 6 and 7 using the Golden Rule model? Measure and record the measured voltages on these pins. If your predictions do not match your measurements check your connections to the chip to find the problem. Make sure your predictions match your measurements before going on. It will be helpful to leave the voltage follower built on your board to quickly check an op-amp in future weeks. Move the chip out and build the other circuits elsewhere on your protoboard.
 
 2.  If you find you have a bad chip, throw it in the trash and grab another. (In case you are wondering, the LF356 costs about 50 cents.)
 
@@ -265,7 +265,7 @@ A voltage follower is the simplest version of a non-inverting amplifier. The vol
 
 ## Input/output impedances and current limit of the circuit
 
-1.  Predict the input impedance of your non-inverting amplifier circuit, $R_i^{’}$. (Hint: You found the input impedance of the op-amp alone in your prelab.) Explain how you determined this number. If you were to increase the input impedance by placing a 1 M$\Omega$ resistor in series with the input, predict how much the output voltage will change. Hint: consider the voltage drop across the 1 M$\Omega$ resistor to get the voltage at Pin 3. Measure $V_{out}$ with and without the 1 $\Omega$ resistor in place. It is better not to measure $V_{in}$ at the same time. Do your measurements agree with your model predictions?
+1.  Predict the input impedance of your non-inverting amplifier circuit, $R_i^{’}$. (Hint: You found the input impedance of the op-amp alone in your prelab.) Explain how you determined this number. If you were to increase the input impedance by placing a 1 M$\Omega$ resistor in series with the input, predict how much the output voltage will change. Hint: consider the voltage drop across the 1 M$\Omega$ resistor to get the voltage at Pin 3. Measure $V_{out}$ with and without the 1 M$\Omega$ resistor in place. It is better not to measure $V_{in}$ at the same time. Do your measurements agree with your model predictions?
 
 2.  Predict the output impedance of your circuit, $R_o{’}$, at a frequency of 1 kHz. (HINT: See 6.2.5) Predict the output voltage based on your input voltage when your circuit is used to drive a load of 200 $\Omega$ and 8 $\Omega$. (Model as a voltage divider with the op-amp output impedance as one resistor and your load resistor as the other resistor.) Measure the output voltage $V_{out}$ for all three configurations (no load, 200 $\Omega$ load, 8 $\Omega$ load). Do the measured values agree with your model prediction? If not, can you make modifications to your model to understand the discrepancy? Hint: Consider the maximum output current of the op-amp.
 

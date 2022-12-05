@@ -22,9 +22,9 @@ class="toc-section-number">5</span> Useful Readings</a></li>
 <li><a href="#prelab" id="toc-prelab"><span
 class="toc-section-number">6</span> Prelab</a>
 <ul>
-<li><a href="#properties-of-and-op-amp"
-id="toc-properties-of-and-op-amp"><span
-class="toc-section-number">6.1</span> Properties of and op-amp</a></li>
+<li><a href="#properties-of-an-op-amp"
+id="toc-properties-of-an-op-amp"><span
+class="toc-section-number">6.1</span> Properties of an op-amp</a></li>
 <li><a href="#non-inverting-amplifier-1"
 id="toc-non-inverting-amplifier-1"><span
 class="toc-section-number">6.2</span> Non-inverting amplifier</a></li>
@@ -281,10 +281,10 @@ the low frequency gain <span class="math inline">\(G_0\)</span> by the 3
 dB bandwidth <span class="math inline">\(f_B\)</span> gives</p>
 <p><span class="math display">\[A_0 f_0=G_0 f_B = f_T\]</span></p>
 <p>In words, this very important formula says that the gain-bandwidth
-product <span class="math inline">\(G_0f_B\)</span> equals the unity
-gain frequency <span class="math inline">\(f_T\)</span>. Thus if an
-op-amp has a unity gain frequency <span
-class="math inline">\(f_T\)</span> of 1 MHz, it can be used to make a
+product, <span class="math inline">\(G_0f_B\)</span>, equals the unity
+gain frequency, <span class="math inline">\(f_T\)</span>. Thus if an
+op-amp has a unity gain frequency, <span
+class="math inline">\(f_T\)</span>, of 1 MHz, it can be used to make a
 non-inverting amplifier with a gain of one and a bandwidth of 1 MHz, or
 with a gain of 10 and a bandwidth of 100 kHz, <em>etc.</em> We will
 consider what this means for the transfer function as a function of
@@ -304,8 +304,8 @@ class="header-section-number">6</span> Prelab</h1>
 can use either Mathematica for the rest of the questions as well or do
 them by hand. <strong>Make sure to have the Mathematica notebook for
 your lab section as well.</strong></p>
-<h2 data-number="6.1" id="properties-of-and-op-amp"><span
-class="header-section-number">6.1</span> Properties of and op-amp</h2>
+<h2 data-number="6.1" id="properties-of-an-op-amp"><span
+class="header-section-number">6.1</span> Properties of an op-amp</h2>
 <p>The first step in using a new component is to look up its basic
 characteristics. Find the following specs using the data sheet for the
 op-amp you will use in the lab for the rest of the semester. Data for
@@ -430,7 +430,7 @@ number where 10 = 10 pF, 102 = 10x10<sup>2</sup> pF = 1 nF, 103 =
 see the important note below about polarized capacitors.</p></li>
 <li><p>Adhere to a color code for wires. For example:</p>
 <ul>
-<li><p><span style="color: green;">0V (ground) Green</span></p></li>
+<li><p><span style="color: black;">0V (ground) Black</span></p></li>
 <li><p><span style="color: red;">+15V Red</span></p></li>
 <li><p><span style="color: blue;">-15V Blue</span></p></li>
 </ul></li>
@@ -477,7 +477,9 @@ on pins 2, 3, 4, 6 and 7 using the Golden Rule model? Measure and record
 the measured voltages on these pins. If your predictions do not match
 your measurements check your connections to the chip to find the
 problem. Make sure your predictions match your measurements before going
-on.</p></li>
+on. It will be helpful to leave the voltage follower built on your board
+to quickly check an op-amp in future weeks. Move the chip out and build
+the other circuits elsewhere on your protoboard.</p></li>
 <li><p>If you find you have a bad chip, throw it in the trash and grab
 another. (In case you are wondering, the LF356 costs about 50
 cents.)</p></li>
@@ -644,7 +646,7 @@ series with the input, predict how much the output voltage will change.
 Hint: consider the voltage drop across the 1 M<span
 class="math inline">\(\Omega\)</span> resistor to get the voltage at Pin
 3. Measure <span class="math inline">\(V_{out}\)</span> with and without
-the 1 <span class="math inline">\(\Omega\)</span> resistor in place. It
+the 1 M<span class="math inline">\(\Omega\)</span> resistor in place. It
 is better not to measure <span class="math inline">\(V_{in}\)</span> at
 the same time. Do your measurements agree with your model
 predictions?</p></li>
