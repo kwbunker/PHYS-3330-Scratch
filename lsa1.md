@@ -50,7 +50,7 @@ Other possible options were not as desirable for a few reasons. CU does not have
 
 # Using Mathematica as a Calculator
 
-Watch the [Introduction to Mathematica screencast.](https://youtu.be/CPAvRsQXK8c) 
+Watch the [Introduction to Mathematica screencast.](https://tinyurl.com/2p83frb2) 
 
 Start Mathematica and create a new notebook. **Keep all of your work in this Lab Skill Activity in this Mathematica notebook. You will turn in this Mathematica Notebook as evidence of completing the activity.**
 
@@ -76,7 +76,7 @@ You will often find it useful to plot functions. For example, in the process of 
 need to visualize a theoretical prediction. Another common example is plotting fitted curve to the data.
 This screencast takes you through the basics of plotting functions using the `Plot` function.
 
-Watch a [screencast on plotting functions with Mathematica.](http://www.youtube.com/watch?v=yEc9L8gVG94)
+Watch a [screencast on plotting functions with Mathematica.](https://tinyurl.com/42kt2xyb)
 
 1. Plot $sin^2\theta$ for $\theta$ between $0$ and $4\pi$.
 2. Plot $sin~2t$ and $cos~3t$ together on the same plot for $t$ between $0$ and $10$.
@@ -101,16 +101,14 @@ Table: Wavelength dependence of the index of refraction of BK7 glass. BK7 glass 
 
 Regardless of how you input the data, it is always represented as a Mathematica list. Lists are like arrays. The following data from Table 1 has been directly entered as a list. The downside is it requires many curly brackets, and we lose the row-column format of the original data which may make you more prone to mistakes as you enter the data.
 
-`data = {{0.3,1.553},{0.4,1.531},{0.5,1.521},{0.6,1.516},`
-
-`{0.7,1.513},{0.8,1.511}}`
+`data = {{0.3,1.553},{0.4,1.531},{0.5,1.521},{0.6,1.516},{0.7,1.513},{0.8,1.511}}`
 
 ***Option 2: Entering data as a nicely formatted table***
 
 In Mathematica you can directly enter data in the form of a table. Keyboard shortcuts make it very easy to
 create additional rows and columns. `<ctrl+comma>` or `<cmd+comma>` creates a new column. `<ctrl+enter>` or `<cmd+enter>` creates a new row.
 
-Watch the [Screencast on entering data as a table and plotting it.](http://www.youtube.com/watch?v=9xJHjPjF8io)
+Watch the [screencast on entering data as a table and plotting it.](https://tinyurl.com/mubm43zy)
 
 There is an [optional screencast](http://www.wolfram.com/broadcast/video.php?sx=grid&c=89&v=581) produced by Wolfram which is informative. 
 
@@ -118,7 +116,7 @@ There is an [optional screencast](http://www.wolfram.com/broadcast/video.php?sx=
 
 Plotting data is another skill that is essential in the lab. By the end of this section you should be able to use the `ListPlot` function for plotting data. When using `ListPlot` you need to be sure the data in the correct form. The most common form data is a list of pairs of numbers. For example, `{{x1,y1},{x2,y2},…}`.
 
-Watch the screencast on [plotting data in Mathematica.](http://youtu.be/PewDMQUj2i8)
+Watch the screencast on [plotting data in Mathematica.](https://tinyurl.com/yr5c297e)
 
 1. Plot the index of refraction data that you already entered into Mathematica.
 
@@ -138,7 +136,7 @@ We are not born knowing Mathematica, so how can you get help? Mathematica's buil
 
 6. Color coding
 
- Watch the [screencast on using Mathematica's built-in help.](http://youtu.be/iS4ZIugPuWc)
+ Watch the [screencast on using Mathematica's built-in help.](https://tinyurl.com/24knrcht)
 
 Use Mathematica's help to do the following tasks and answer the following questions:
 
@@ -151,7 +149,7 @@ Use Mathematica's help to do the following tasks and answer the following questi
 
 If you use Mathematica notebooks effectively in the lab, they will be a place to have your data, plots, analysis, and results all in one place. This section of the lab skill activity will show you how to add organization like Titles, subtitles, sections, and subsections to your document. It will also show you how to annotate your document with paragraphs of text, well-formatted equations, and additional annotations to plots.
 
-Watch the screencast on [using Mathematica effectively in the lab.](http://www.youtube.com/watch?v=anO_IXgZRuk)
+Watch the screencast on [using Mathematica effectively in the lab.](https://tinyurl.com/365b2pu8)
 
 Your Mathematica notebook can be a convenient way to organize a lot of your data, plots, ideas, graphics. Let's apply some of the formatting features learned in this activity to your current Mathematica notebook. You will probably find it helpful to use the "Classroom Assistant Palette" to complete these tasks.
 

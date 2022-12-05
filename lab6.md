@@ -93,7 +93,7 @@ In an ordinary inverting amplifier, the input voltage is applied to a resistor, 
 
 $$G=\frac{V_{out}}{I_{in}}=-R_F$$
 
-This gain has the units of impedance i.e., Ohms, and it is often called a transimpedance gain. The current-tovoltage amplifier is also called a transimpedance amplifier. This type of amplifier is very common in research labs, and is used to amplify the current from photodiodes, photo multiplier tubes, ion detectors, etc.
+This gain has the units of impedance i.e., Ohms, and it is often called a transimpedance gain. The current-to-voltage amplifier is also called a transimpedance amplifier. This type of amplifier is very common in research labs, and is used to amplify the current from photodiodes, photo multiplier tubes, ion detectors, etc.
 
 ![Photodetector circuit](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lab6fig/photodetector.png){#fig:photodetector width="10cm"}
 
@@ -171,13 +171,13 @@ Answer the following questions using Mathematica for the plots. You can use eith
 
 1.  We will first build the amplifier in a normal voltage amplifier configuration to test the setup and all the connections. Build the inverting amplifier circuit shown in Figure @fig:inv-amp-cir. Use a value for $R_F = R$ close to what you found in @sec:trans-pre, and a 10 pF capacitor $C_F$ in parallel with the feedback resistor to avoid spontaneous oscillations. Draw the schematic in your lab notebook and record the values of the components.
 
-2.  Predict the low frequency gain and 3 dB frequency of the circuit. HINT: Look at your prelab answers. This will be the $R_FC_F$ time constant from@sec:trans-pre; in this circuit the time constant will be determined by the feedback resistor and capacitor (not the input resistor). Design a test to ensure the amplifier is working as predicted at low frequency (much lower than the cutoff). Don't bother testing the high-frequency behavior.
+2.  Predict the low frequency gain and 3 dB frequency of the circuit. HINT: Look at your prelab answers. This will be the $R_FC_F$ time constant from @sec:trans-pre; in this circuit the time constant will be determined by the feedback resistor and capacitor (not the input resistor). Design a test to ensure the amplifier is working as predicted at low frequency (much lower than the cutoff). Don't bother testing the high-frequency behavior.
 
 # Room Light Photometer
 
 1.  Reconfigure your voltage amplifier to the transimpedance amplifier circuit shown in Figure @fig:photodetector. Pay attention to the direction of the photodiode. You can use your DMM set to the "diode setting" to determine which side of the diode is the cathode.
 
-2.  Verify that it changes as a function of the amount of incident light on the photodiode, for instance, by putting your hand over the photodiode to shade it from the room lights.
+2.  Verify that it changes as a function of the amount of incident light on the photodiode, for instance, by putting your hand over the photodiode to shade it from the room lights. Look at the output voltage on an oscilloscope. What is the period of the waveform produced? What is it you think you're seeing?
 
 # Optical Communication Link
 

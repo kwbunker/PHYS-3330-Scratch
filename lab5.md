@@ -81,7 +81,7 @@ The above formulas are still correct when $A$ and/or $B$ depend on frequency. $B
 
 $$A(f)=\frac{A_0}{1+j\frac{f}{f_0}}$$
 
-The 3 B frequency, $f_0$, is usually very low, around 10 Hz. Data sheets do not usually give $f_0$ directly; instead they give the DC gain, $A_0$, and the unity gain frequency $f_T$, which is the frequency where the magnitude of the open loop gain $A$ is equal to one. The relation between $A_0$, $f_0$, and $f_T$ is
+The 3 B frequency, $f_0$, is usually very low, around 10 Hz. Data sheets do not usually give $f_0$ directly; instead they give the DC gain, $A_0$, and the unity gain frequency, $f_T$, which is the frequency where the magnitude of the open loop gain $A$ is equal to one. The relation between $A_0$, $f_0$, and $f_T$ is
 
 $$f_{T} = A_{0}f_{0}$$
 
@@ -115,7 +115,7 @@ The Summing Amplifier, shown in Figure @fig:sumamp, is a very flexible circuit b
 
 $$V_{out}=-\left[V_1\left(\frac{R_F}{R_1}\right) + V_2\left(\frac{R_F}{R_2}\right) + V_3\left(\frac{R_F}{R_3}\right)\right]$$
 
-This circuit has many applications including working as an adder in any basis-set you specify. If you only restrict yourself to input voltages of 0 or 1 V (or on and off), you get to a binary adder and can convert binary signals to analog (e.g. base 2 to base 10). Digital-to-analog converters are found in every research lab (or computer, or phone, etc.) where you want to create any value of a signal from just 1's and 0's. If you want a refresher on binary or counting in binary, you can [this the Wikipedia entry](https://en.wikipedia.org/wiki/Binary_number#Counting_in_binary).
+This circuit has many applications including working as an adder in any basis-set you specify. If you only restrict yourself to input voltages of 0 or 1 V (or on and off), you get to a binary adder and can convert binary signals to analog (e.g. base 2 to base 10). Digital-to-analog converters are found in every research lab (or computer, or phone, etc.) where you want to create any value of a signal from just 1's and 0's. If you want a refresher on binary or counting in binary, you can use [this Wikipedia entry](https://en.wikipedia.org/wiki/Binary_number#Counting_in_binary).
 
 # Integrator Theory
 
@@ -154,7 +154,7 @@ Answer the following questions using Mathematica for the plots. You can use eith
 
 ## Inverting amplifier
 
-1.  Calculate the values of low frequency gain $G_0$ and the bandwidth $f_B$ for the inverting amplifier in Figure @fig:invamp for the following circuit you will build in lab with the following resistors: $R_F = 10 ~k\Omega$ and $R = 10 ~\Omega$ .
+1.  Calculate the values of low frequency gain, $G_0$, and the bandwidth, $f_B$, for the inverting amplifier in Figure @fig:invamp for the following circuit you will build in lab with the following resistors: $R_F = 10 ~k\Omega$ and $R = 10 ~\Omega$ .
 
 2.  Graph a Bode plot for the open loop gain and the closed loop gain for the circuit from above on the same graph using Mathematica (making sure to label axes and curves).
 
@@ -200,7 +200,7 @@ All op-amp circuits start out by making the basic power connections. Op-amps are
 
     3.  Adhere to a color code for wires. For example:
 
-        -   <span style="color: green;">0V (ground) Green</span>
+        -   <span style="color: black;">0V (ground) Black</span>
 
         -   <span style="color: red;">+15V Red</span>
 
@@ -227,7 +227,7 @@ All op-amp circuits start out by making the basic power connections. Op-amps are
 
 ## First tests
 
-1.  Modify your basic inverting op-amp circuit to make it a summing amplifier as shown in Figure @fig:sumamp. Use the component values you determined in your prelab for the resistors (you may want to check with your instructor to be sure they make sense). Draw the schematic in your notebook and label all components. Measure the resistors before inserting them into your circuit and record the values.
+1.  Modify your basic inverting op-amp circuit to make it a summing amplifier as shown in Figure @fig:sumamp. Use the component values you determined in your prelab for the resistors (you may want to check with your instructor to be sure they make sense). Draw the schematic in your lab notebook and label all components. Measure the resistors before inserting them into your circuit and record the values.
 
 2.  Determine the transfer function for your exact component values. What is $V_{out}$ in terms of $V_1$, $V_2$, and $V_3$?
 
@@ -235,7 +235,7 @@ All op-amp circuits start out by making the basic power connections. Op-amps are
 
 ## Digital-to-analog conversion
 
-Use your summing amplifier in "digital to analog conversion mode" to create integer output voltages from 0 to --7 V from two input voltages (0 V and 1 V). Predict what set of input voltages is required to get each desired output voltage (*Hint: You did this in your prelab*). Do your measurements agree with your predictions for all eight voltages? How accurately were you able to make integer values of voltage? Describe a way to refine the physical system to more accurately create exact integer voltages.
+Use your summing amplifier in "digital to analog conversion mode" to create integer output voltages from 0 to -7 V from two input voltages (0 V and 1 V). Predict what set of input voltages is required to get each desired output voltage (*Hint: You did this in your prelab*). Do your measurements agree with your predictions for all eight voltages? How accurately were you able to make integer values of voltage? Describe a way to refine the physical system to more accurately create exact integer voltages.
 
 # Integrator Application
 

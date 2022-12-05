@@ -33,7 +33,7 @@ You will be…
 
 # A Few More Mathematica Basics {#sec:basic}
 
-Defining functions that perform a sequence of mathematical or logical steps is a key part of every programming language. [Watch the screencast on defining and using functions in Mathematica.](https://www.youtube.com/watch?v=1A4f91yMVhA)
+Defining functions that perform a sequence of mathematical or logical steps is a key part of every programming language. [Watch the screencast on defining and using functions in Mathematica.](https://tinyurl.com/54n854z5)
 
 1. Define a function in Mathematica that represents $f(x) = sin(x)/x$
 2. Explain the difference between how Mathematica interprets the following two expressions:
@@ -51,7 +51,7 @@ A "List" in Mathematica is the equivalent of an “array” in most other progra
 
 In Mathematica Plot is used for plotting functions and ListPlot is used for plotting data. If we want to combine a plot of a theoretical prediction or a best fit curve with our data we need to combine these two different kinds of plots. The key method is Mathematica's Show function.
 
-Watch the screencast on [combining plots of data and functions](https://www.youtube.com/watch?v=NDA90htObC4).
+Watch the screencast on [combining plots of data and functions](https://tinyurl.com/bdhebupv).
 
 1. Write down a mathematical expression for the predicted output signal of a waveform generator for either the square wave, saw tooth wave, or triangle wave. You can write a formal math expression or use the builtin Mathematica functions for `Sin`, `SquareWave`, `SawtoothWave`, and `TriangleWave` (consult Mathematica's help for using these appropriately).
 2. Make a plot of your prediction using the expression you created above.
@@ -61,7 +61,7 @@ Watch the screencast on [combining plots of data and functions](https://www.yout
 
 Scientists often need to perform fits to their data. This could be because they know the functional form the data should follow and use a fit to determine one or more parameters in the function. Or because they don’t know the functional form and try various functions to see which one best fits the data. After completing this activity, you will be able to use the `LinearModelFit` and `NonlinearModelFit` functions for doing least squares fitting of data. You will demonstrate your proficiency by fitting an exponential decay. The data are the number of counts detected as a function of time for cosmic ray muon decays. The data were taken in a previous semester as part of the muon lifetime lab. The decay time you estimate from the least-squares fit is the lifetime of the muon. The muon data is available as Muon_lifetime_data.csv in Canvas.
 
-Watch the [screencast on fitting data in Mathematica.](https://www.youtube.com/watch?v=KolZZm8If9Q)
+Watch the [screencast on fitting data in Mathematica.](https://tinyurl.com/ynudcc4t)
 
 1. Write down a mathematical expression for the function you will use to fit your data.
 2. How many free parameters do you need? Give a brief explanation in words, or with a graph to explain what they mean.
@@ -74,7 +74,7 @@ Watch the [screencast on fitting data in Mathematica.](https://www.youtube.com/w
 
 The default plot style in Mathematica does not look very good for presentation quality graphics. This screencast give some options for changing the plot style. Figure @fig:plot shows an example of the plot style changes you will be able to implement after watching the screencast. The screencast also demonstrates the use of the `SetOptions` function which allows you to set the default plot options.
 
-Watch the [screencast on changing the plot style.](https://www.youtube.com/watch?v=MftXG9SNHGk)
+Watch the [screencast on changing the plot style.](https://tinyurl.com/y4hxvmjn)
 
 ![Plot of $sin(t)$ for $t$ between $0$ and $10$. Modifying the plot options can improve the viewing of the plot within Mathematica and for printing. Notice that the default axes and sine curve are very thin when printed.](https://raw.githubusercontent.com/kwbunker/PHYS-3330-Scratch/main/lsa2fig/plot.png){#fig:plot width="15cm"}
 
